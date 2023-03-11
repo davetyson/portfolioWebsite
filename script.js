@@ -11,8 +11,12 @@ const overallMenu = document.querySelector('.menu');
 menuButton.addEventListener('mouseover', function(){
     const menu = document.querySelector('ul');
     menu.style.opacity='100%';
+    // menu.style.transform='translateX(0%)';
+    menu.classList='runMenuAnimation';
     overallMenu.addEventListener('mouseleave', function(){
         // const menu = document.querySelector('ul');
         menu.style.opacity='0%';
+        menu.classList='menuSlideBack';
+        // menu.style.transform='translateX(-50%)';
     });
 });
