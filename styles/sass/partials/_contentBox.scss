@@ -1,0 +1,25 @@
+/* Main content block styles */
+
+.rightBlock {
+    position: absolute;
+    bottom: 5vh;
+    right: 5%;
+    margin: 5% 0% 0% 50%;
+    width: 50%;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.redBarLow {
+    width: 95%;
+}
+
+.rotateTextMain {
+    transform: rotate(90deg);
+    padding-top: 30px;
+}
+
+p {
+    padding-left: 70px;
+    transition: 0.3s;
+}

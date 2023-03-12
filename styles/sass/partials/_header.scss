@@ -1,0 +1,54 @@
+/* Header styles */
+
+/* Typography */
+h2 {
+    margin: 0;
+}
+
+.fontLight {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.rotateText {
+    transform: rotate(270deg);
+    padding-bottom: 50px;
+}
+
+/* Block formatting */
+.leftBlock {
+    width: 100%;
+}
+
+.topH3 {
+    padding-top: 25px;
+}
+
+/* Red bar */
+.redBar {
+    height: 20px;
+    width: 380px;
+    background-color: red;
+}
+
+/* Menu list styles */
+ul {
+    opacity: 0%;
+    // left: 100px;
+    left: 10%;
+    padding-top: -20px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+/* .bulletLi {
+    font-size: 2rem;
+} */

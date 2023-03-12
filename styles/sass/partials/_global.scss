@@ -1,0 +1,51 @@
+/* Global & wrapper styles */
+
+/* Global styles */
+html {
+    font-size: 125%;
+    font-family: 'Puritan', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: #F7D58D;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+a {
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Wrapper & flexbox styles */
+.wrapper {
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 90%;
+    max-width: 1500px;
+    height: 90vh;
+    border: 3px solid #000;
+    position: relative;
+    padding: 5%;
+}
+
+.flexbox {
+    display: flex;
+}

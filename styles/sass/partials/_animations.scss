@@ -1,0 +1,49 @@
+/* Animation styles */
+
+@keyframes menuSlide {
+    0% {
+        transform: translateX(-8%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes menuSlideBack {
+    0% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(-8%);
+        opacity: 0%;
+
+    }
+}
+
+@keyframes mainSlideUp {
+    0% {
+        transform: translateY(20%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+.runMenuAnimation {
+    /* transform: translateX(-50%); */
+    animation: menuSlide 0.3s linear 1;
+}
+
+.menuSlideBack {
+    position: absolute;
+    animation: menuSlideBack 0.3s linear 1;
+}
+
+.mainSlideUp {
+    animation: mainSlideUp 0.6s linear 1;
+}
