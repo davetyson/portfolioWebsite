@@ -424,7 +424,8 @@ h3 {
 
 /* Menu block */
 .menu {
-  padding-bottom: 50px;
+  position: relative;
+  z-index: 20;
 }
 .menu h2 {
   text-align: end;
@@ -438,6 +439,7 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
+  z-index: 30;
 }
 
 /* .bulletLi {
@@ -578,6 +580,10 @@ p {
   transition: 0.3s;
 }
 
+.contactLink {
+  z-index: 10;
+}
+
 footer {
   width: 100%;
   -webkit-box-pack: end;
@@ -590,12 +596,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 30vh;
   position: fixed;
   right: 10%;
-  top: 70vh;
+  top: 60vh;
 }
 footer p {
   margin: 0;

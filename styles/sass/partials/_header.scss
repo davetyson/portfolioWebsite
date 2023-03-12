@@ -44,7 +44,8 @@ h3 {
 
 /* Menu block */
 .menu {
-    padding-bottom: 50px;
+    position: relative;
+    z-index: 20;
     h2 {
         text-align: end;
     }
@@ -57,6 +58,7 @@ ul {
     padding-top: -20px;
     transition: 0.3s;
     position: absolute;
+    z-index: 30;
 }
 
 /* .bulletLi {

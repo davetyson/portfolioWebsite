@@ -113,15 +113,19 @@ p {
     transition: 0.3s;
 }
 
+.contactLink {
+    z-index: 10;
+}
+
 footer {
     width: 100%;
     justify-content: end;
     align-items: end;
     flex-direction: column;
-    height: fit-content;
+    height: 30vh;
     position: fixed;
     right: 10%;
-    top: 70vh;
+    top: 60vh;
     p {
         margin: 0;
         padding: 0;
