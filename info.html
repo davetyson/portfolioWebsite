@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper flexbox">
         <header class="leftBlock">
             <h2 class="fontLight">Dave Tyson</h2>
             <div class="flexbox">
@@ -35,11 +36,23 @@
             </div>
         </header>    
         <main class="rightBlock flexbox">
-            <h2 class="rotateTextMain">Info</h2>
-            <p class="mainSlideUp">Here is some placeholder text for the info area! And some lorem 'cause I want to see how that looks Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus ut soluta sapiente dolores placeat, officiis ad minima provident vero nobis corrupti ab dolorum voluptas similique voluptatibus fugit modi totam dicta numquam unde doloribus sed. Provident officiis totam blanditiis hic perspiciatis aliquam quaerat, eum fugiat iste, voluptate consectetur, temporibus consequuntur?</p>
-            <div class="redBar redBarLow"></div>
-            <footer><p class="footerP"></p></footer>
+            <div class="infoContainer mainSlideUp flexbox">
+                <div class="socialBox flexbox">
+                    <a href="https://github.com/davetyson"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/davetysontech/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/minerkey_" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+                <a href="https://www.mixcloud.com/djdarktripdave/" target="_blank">&#8598 Check out some mixes from my record collection</a>
+                <a href="https://opensea.io/minerkey" target="_blank">&#8598 See my public NFT collection</a>
+                <a href="https://www.instagram.com/misatotheshiba/" target="_blank">&#8598 My Shiba Inu's Instagram account</a>
+                <p>Website theme inspired by Orchestral Manouevers in the Dark's "Architecture & Morality"</p>
+            </div>
         </main>
+        <footer class="flexbox">   
+            <h2 class="rotateTextMain">Info</h2>
+            <div class="redBar2"></div>
+            <p class="footerP"></p>
+        </footer>
     </div>
     <script src="./script.js"></script>
 </body>

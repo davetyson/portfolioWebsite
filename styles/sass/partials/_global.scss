@@ -32,6 +32,9 @@ ul {
 
 figure {
     margin: 0;
+    height: 240px;
+    width: 240px;
+    flex-shrink: 0;
 }
 
 /* Wrapper & flexbox styles */
@@ -44,6 +47,7 @@ figure {
     border: 3px solid #000;
     position: relative;
     padding: 5%;
+    flex-wrap: wrap;
 }
 
 .flexbox {

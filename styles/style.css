@@ -260,6 +260,10 @@ ul {
 
 figure {
   margin: 0;
+  height: 240px;
+  width: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 /* Wrapper & flexbox styles */
@@ -272,6 +276,8 @@ figure {
   border: 3px solid #000;
   position: relative;
   padding: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flexbox {
@@ -360,7 +366,6 @@ figure {
 }
 
 .menuSlideBack {
-  position: absolute;
   -webkit-animation: menuSlideBack 0.3s linear 1;
           animation: menuSlideBack 0.3s linear 1;
 }
@@ -370,7 +375,9 @@ figure {
           animation: mainSlideUp 0.6s linear 1;
 }
 
-/* Variables */ /* Mixins */ /* Header styles */
+/* Variables */
+/* Media Query breakpoints */ /* Mixins */
+/* Header styles */
 /* Typography */
 h2 {
   margin: 0;
@@ -390,14 +397,18 @@ h3 {
 }
 
 .rotateText {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  padding-bottom: 50px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-bottom: 5px;
+  text-align: start;
 }
 
 /* Block formatting */
 .leftBlock {
-  width: 100%;
+  width: 45%;
 }
 
 .topH3 {
@@ -407,14 +418,22 @@ h3 {
 /* Red bar */
 .redBar {
   height: 20px;
-  width: 380px;
+  width: 100%;
   background-color: red;
+}
+
+/* Menu block */
+.menu {
+  padding-bottom: 50px;
+}
+.menu h2 {
+  text-align: end;
 }
 
 /* Menu list styles */
 ul {
   opacity: 0%;
-  left: 10%;
+  left: 12%;
   padding-top: -20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -426,11 +445,9 @@ ul {
 } */
 /* Main content block styles */
 .rightBlock {
-  position: absolute;
-  bottom: 5vh;
-  right: 5%;
-  margin: 5% 0% 0% 50%;
-  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -438,20 +455,149 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: auto;
+  max-height: 90%;
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 3vh;
+  padding-right: 40px;
+}
+.rightBlock a {
+  text-align: end;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 70px;
+  margin-right: 10px;
+  width: 100%;
 }
 
-.redBarLow {
-  width: 95%;
+.rightBlock::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.infoContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  text-align: right;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.infoContainer a {
+  margin-top: 10px;
+}
+.infoContainer .socialBox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.infoContainer .socialBox a {
+  margin: 0 10px;
+}
+.infoContainer p {
+  margin-right: 10px;
+}
+
+.projects {
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 100%;
+}
+.projects h2 {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.projects h3 {
+  font-size: 1rem;
+  margin: 20px 0 5px 0;
+}
+.projects a {
+  font-size: 0.8rem;
+}
+.projects p {
+  font-size: 0.8rem;
+}
+
+.projectPadding {
+  padding-right: 10px;
+}
+
+.projectContainer p {
+  margin: 0;
+  padding-top: 2px;
+}
+
+.smallInfoLinks {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  padding-bottom: 5px;
+}
+.smallInfoLinks p {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+.smallInfoLinks a {
+  margin: 0;
+  text-align: center;
+}
+
+.redBar2 {
+  height: 20px;
+  width: 45%;
+  background-color: red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .rotateTextMain {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  padding-top: 30px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-bottom: 5px;
+  text-align: end;
 }
 
 p {
   padding-left: 70px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+footer {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+  right: 10%;
+  top: 70vh;
+}
+footer p {
+  margin: 0;
+  padding: 0;
 }

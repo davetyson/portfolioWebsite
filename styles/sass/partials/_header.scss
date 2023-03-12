@@ -19,13 +19,15 @@ h3 {
 }
 
 .rotateText {
-    transform: rotate(270deg);
-    padding-bottom: 50px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-bottom: 5px;
+    text-align: start;
 }
 
 /* Block formatting */
 .leftBlock {
-    width: 100%;
+    width: 45%;
 }
 
 .topH3 {
@@ -35,15 +37,23 @@ h3 {
 /* Red bar */
 .redBar {
     height: 20px;
-    width: 380px;
+    // width: 380px;
+    width: 100%;
     background-color: red;
+}
+
+/* Menu block */
+.menu {
+    padding-bottom: 50px;
+    h2 {
+        text-align: end;
+    }
 }
 
 /* Menu list styles */
 ul {
     opacity: 0%;
-    // left: 100px;
-    left: 10%;
+    left: 12%;
     padding-top: -20px;
     transition: 0.3s;
     position: absolute;
