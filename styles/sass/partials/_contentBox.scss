@@ -8,12 +8,13 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
     max-height: 90%;
     width: 45%;
     margin-left: 10%;
     margin-top: 3vh;
     padding-right: 40px;
+    // scrollbar-width: none;
     a {
         text-align: end;
         height: fit-content;
@@ -23,10 +24,9 @@
     }
 }
 
-.rightBlock::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
+// .rightBlock::-webkit-scrollbar {
+//     display: none;
+// }
 
 .infoContainer {
     flex-direction: column;
@@ -48,10 +48,17 @@
     }
 }
 
+.extraMargin {
+    margin-bottom: 20px;
+}
+
 .projects {
     text-align: end;
-    justify-content: end;
+    // justify-content: end;
     height: 100%;
+    flex-direction: column;
+    padding-right: 10px;
+
     h2 {
         font-size: 1.1rem;
         margin-top: 20px;
@@ -66,12 +73,6 @@
     p {
         font-size: 0.8rem;
     }
-}
-
-.projectPadding {
-    padding-right: 10px;
-    justify-content: end;
-    flex-direction: column;
 }
 
 .projectContainer {
@@ -115,12 +116,13 @@ p {
     transition: 0.3s;
 }
 
-.contactLink {
-    z-index: 10;
-}
+// .contactLink {
+//     z-index: 10;
+// }
 
 footer {
     width: 100%;
+    max-width: 1500px;
     justify-content: end;
     align-items: end;
     flex-direction: column;
@@ -128,6 +130,7 @@ footer {
     position: fixed;
     right: 10%;
     top: 60vh;
+    z-index: -10;
     p {
         margin: 0;
         padding: 0;

@@ -240,6 +240,12 @@ body {
   overflow: hidden;
 }
 
+h5 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 0.6rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -457,7 +463,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: auto;
+  overflow-y: auto;
   max-height: 90%;
   width: 45%;
   margin-left: 10%;
@@ -472,11 +478,6 @@ ul {
   margin-top: 70px;
   margin-right: 10px;
   width: 100%;
-}
-
-.rightBlock::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
 }
 
 .infoContainer {
@@ -506,12 +507,18 @@ ul {
   margin-right: 10px;
 }
 
+.extraMargin {
+  margin-bottom: 20px;
+}
+
 .projects {
   text-align: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 10px;
 }
 .projects h2 {
   font-size: 1.1rem;
@@ -526,17 +533,6 @@ ul {
 }
 .projects p {
   font-size: 0.8rem;
-}
-
-.projectPadding {
-  padding-right: 10px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .projectContainer p {
@@ -587,12 +583,9 @@ p {
   transition: 0.3s;
 }
 
-.contactLink {
-  z-index: 10;
-}
-
 footer {
   width: 100%;
+  max-width: 1500px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -607,6 +600,7 @@ footer {
   position: fixed;
   right: 10%;
   top: 60vh;
+  z-index: -10;
 }
 footer p {
   margin: 0;
