@@ -1,0 +1,22 @@
+/* Info styles */
+
+.infoContainer {
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    a {
+        margin-top: 10px;
+    }
+    .socialBox {
+        width: fit-content;
+        a {
+        margin: 0 10px;
+        }
+    }
+    p {
+        margin-right: 10px;
+    }
+}
+

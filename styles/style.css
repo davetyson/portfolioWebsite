@@ -246,6 +246,13 @@ h5 {
   font-size: 0.6rem;
 }
 
+p {
+  padding-left: 70px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -272,7 +279,7 @@ figure {
       flex-shrink: 0;
 }
 
-/* Wrapper & flexbox styles */
+/* Wrapper, flexbox, and content block styles */
 .wrapper {
   margin: 0 auto;
   margin-top: 5vh;
@@ -292,7 +299,41 @@ figure {
   display: flex;
 }
 
-/* Animation styles */
+/* New additions after sorting of pages */
+.rightBlock {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  max-height: 90%;
+  width: 45%;
+  margin-left: 10%;
+  margin-top: 3vh;
+  padding-right: 40px;
+  scrollbar-width: none;
+}
+.rightBlock a {
+  text-align: end;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 70px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.rightBlock::-webkit-scrollbar {
+  display: none;
+}
+
+/* Typography styles */ /* Animation styles */
 @-webkit-keyframes menuSlide {
   0% {
     -webkit-transform: translateX(-8%);
@@ -382,7 +423,7 @@ figure {
 }
 
 /* Variables */
-/* Media Query breakpoints */ /* Mixins */
+/* Media Query breakpoints */
 /* Header styles */
 /* Typography */
 h2 {
@@ -451,40 +492,99 @@ ul {
 /* .bulletLi {
     font-size: 2rem;
 } */
-/* Main content block styles */
-.rightBlock {
+/* Mixins */
+/* Footer styles */
+footer {
+  width: 100%;
+  max-width: 1500px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: end;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: auto;
-  max-height: 90%;
-  width: 45%;
-  margin-left: 10%;
-  margin-top: 3vh;
-  padding-right: 40px;
-  scrollbar-width: none;
+  height: 30vh;
+  position: fixed;
+  top: 60vh;
+  right: 10%;
+  z-index: -10;
 }
-.rightBlock a {
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer .rotateTextMain {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-bottom: 5px;
   text-align: end;
+}
+footer .redBar2 {
+  height: 20px;
+  width: 40%;
+  background-color: red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+/* Index styles */ /* Projects styles */
+.projects {
+  text-align: end;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 10px;
+}
+.projects h2 {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+.projects h3 {
+  font-size: 1rem;
+  margin: 20px 0 5px 0;
+}
+.projects a {
+  font-size: 0.8rem;
+}
+.projects p {
+  font-size: 0.8rem;
+}
+.projects .projectContainer p {
+  margin: 0;
+  padding-top: 2px;
+}
+.projects .projectContainer .smallInfoLinks {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 70px;
-  margin-right: 10px;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  padding-bottom: 5px;
+}
+.projects .projectContainer .smallInfoLinks p {
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+.projects .projectContainer .smallInfoLinks a {
+  margin: 0;
+  text-align: center;
+}
+.projects .extraMargin {
+  margin-bottom: 20px;
 }
 
-.rightBlock::-webkit-scrollbar {
-  display: none;
-}
-
+/* Info styles */
 .infoContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -512,102 +612,4 @@ ul {
   margin-right: 10px;
 }
 
-.extraMargin {
-  margin-bottom: 20px;
-}
-
-.projects {
-  text-align: end;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-right: 10px;
-}
-.projects h2 {
-  font-size: 1.1rem;
-  margin-top: 20px;
-}
-.projects h3 {
-  font-size: 1rem;
-  margin: 20px 0 5px 0;
-}
-.projects a {
-  font-size: 0.8rem;
-}
-.projects p {
-  font-size: 0.8rem;
-}
-
-.projectContainer p {
-  margin: 0;
-  padding-top: 2px;
-}
-
-.smallInfoLinks {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  padding-bottom: 5px;
-}
-.smallInfoLinks p {
-  margin: 0;
-  padding: 0 10px;
-  text-align: center;
-}
-.smallInfoLinks a {
-  margin: 0;
-  text-align: center;
-}
-
-.redBar2 {
-  height: 20px;
-  width: 40%;
-  background-color: red;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.rotateTextMain {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  padding-bottom: 5px;
-  text-align: end;
-}
-
-p {
-  padding-left: 70px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-footer {
-  width: 100%;
-  max-width: 1500px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 30vh;
-  position: fixed;
-  top: 60vh;
-  right: 10%;
-  z-index: -10;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}
+/* Contact styles */

@@ -1,19 +1,36 @@
-const menuButton = document.querySelector('.rotateText');
-const overallMenu = document.querySelector('.menu');
-const footerP = document.querySelector('.footerP');
-let currentYear = new Date().getFullYear();
-footerP.innerHTML = `© Dave Tyson ${currentYear}`;
-const projectList = document.querySelector('.projects');
+const portfolioApp = {};
 
-menuButton.addEventListener('mouseover', function(){
-    const menu = document.querySelector('ul');
-    menu.style.opacity='100%';
-    menu.classList='runMenuAnimation';
-    overallMenu.addEventListener('mouseleave', function(){
-        menu.style.opacity='0%';
-        menu.classList='menuSlideBack';
+portfolioApp.menuReturn = () => {
+    portfolioApp.overallMenu.addEventListener('mouseleave', function(){
+        portfolioApp.menu.style.opacity='0%';
+        portfolioApp.menu.classList='menuSlideBack';
     });
-});
+}
+
+portfolioApp.menuStart = () => {
+        portfolioApp.menuButton.addEventListener('mouseover', function(){
+            portfolioApp.menu.style.opacity='100%';
+            portfolioApp.menu.classList='runMenuAnimation'
+            portfolioApp.menuReturn();
+    });
+}   
+
+portfolioApp.footerYear = () => {
+    let currentYear = new Date().getFullYear();
+    portfolioApp.footerP.innerHTML = `© Dave Tyson ${currentYear}`;
+}
+
+portfolioApp.init = () => {
+    portfolioApp.menuButton = document.querySelector('.rotateText');
+    portfolioApp.overallMenu = document.querySelector('.menu');
+    portfolioApp.footerP = document.querySelector('.footerP');
+    portfolioApp.menu = document.querySelector('ul')
+    portfolioApp.menuStart();
+    portfolioApp.footerYear();
+}
+
+portfolioApp.init();
+
 
 // setTimeout(() => {
 //      projectList.style='overflow: hidden';

@@ -1,7 +1,12 @@
 @use './partials/setup';
 @use './partials/global';
+@use './partials/typography';
 @use './partials/animations';
 @use './partials/variables';
-@use './partials/mixins';
+// @use './partials/mixins';
 @use './partials/header';
-@use './partials/contentBox';
+@use './partials/footer';
+@use './partials/index';
+@use './partials/projects';
+@use './partials/info';
+@use './partials/contact';

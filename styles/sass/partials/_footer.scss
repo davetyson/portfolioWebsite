@@ -1,0 +1,48 @@
+@use "./mixins" as *;
+
+// @include mq('tablet-wide') {
+//     display: block;
+// }
+
+/* Footer styles */
+
+footer {
+
+    // I can't get the media query to work (no new rules kick in when the screen size changes) but it relies on two rules, which are figured out completely
+    // If the wrapper has reached max-width, use right: calc(55% - 750px)
+    // If the wrapper is less than max-width, use right: 10%
+    // Once I figure out why the media query is not working it should be easy
+    @include mq('max-width' + 10%) {
+        right: calc(55% - 750px);    
+    }
+
+    width: 100%;
+    max-width: 1500px;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    height: 30vh;
+    position: fixed;
+    top: 60vh;
+    right: 10%;
+    z-index: -10;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .rotateTextMain {
+        writing-mode: vertical-rl;
+        padding-bottom: 5px;
+        text-align: end;
+    }
+
+    .redBar2 {
+        height: 20px;
+        width: 40%;
+        background-color: red;
+        justify-content: end;
+    }
+}
+
