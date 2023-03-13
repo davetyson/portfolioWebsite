@@ -469,6 +469,7 @@ ul {
   margin-left: 10%;
   margin-top: 3vh;
   padding-right: 40px;
+  scrollbar-width: none;
 }
 .rightBlock a {
   text-align: end;
@@ -478,6 +479,10 @@ ul {
   margin-top: 70px;
   margin-right: 10px;
   width: 100%;
+}
+
+.rightBlock::-webkit-scrollbar {
+  display: none;
 }
 
 .infoContainer {
@@ -562,7 +567,7 @@ ul {
 
 .redBar2 {
   height: 20px;
-  width: 45%;
+  width: 40%;
   background-color: red;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -598,8 +603,8 @@ footer {
           flex-direction: column;
   height: 30vh;
   position: fixed;
-  right: 10%;
   top: 60vh;
+  right: 10%;
   z-index: -10;
 }
 footer p {
