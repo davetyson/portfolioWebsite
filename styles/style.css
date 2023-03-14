@@ -244,7 +244,12 @@ body {
 h5 {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 0.6rem;
+  font-size: 0.3rem;
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-size: 0.6rem;
+  }
 }
 
 p {
@@ -253,6 +258,7 @@ p {
   transition: 0.3s;
   margin: 0;
   text-align: right;
+  font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
   p {
@@ -262,6 +268,7 @@ p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    font-size: 1rem;
   }
 }
 
@@ -274,6 +281,12 @@ img {
 a {
   color: #0D0D0D;
   text-decoration: none;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  a {
+    font-size: 1rem;
+  }
 }
 
 ul {
@@ -284,10 +297,16 @@ ul {
 
 figure {
   margin: 0;
-  height: 240px;
-  width: 240px;
+  height: 120px;
+  width: 120px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+@media only screen and (min-width: 768px) {
+  figure {
+    height: 240px;
+    width: 240px;
+  }
 }
 
 /* Wrapper, flexbox, and content block styles */
@@ -462,19 +481,37 @@ figure {
 /* Typography */
 h2 {
   margin: 0;
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .fontLight {
   font-weight: 400;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .fontLight {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 h3 {
   margin: 5px;
-  margin-top: 15px;
-  font-size: 1.5rem;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
 }
 
 .rotateText {
@@ -489,11 +526,21 @@ h3 {
 
 /* Block formatting */
 .leftBlock {
-  width: 45%;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .leftBlock {
+    width: 45%;
+  }
 }
 
 .topH3 {
-  padding-top: 25px;
+  padding-top: 31px;
+}
+@media only screen and (min-width: 768px) {
+  .topH3 {
+    padding-top: 25px;
+  }
 }
 
 /* Red bar */
@@ -520,7 +567,7 @@ h3 {
 /* Menu list styles */
 ul {
   opacity: 0%;
-  left: 25%;
+  left: 10%;
   padding-top: -20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -604,18 +651,38 @@ footer .redBar2 {
   padding-right: 10px;
 }
 .projects h2 {
-  font-size: 1.1rem;
+  font-size: 0.825rem;
   margin-top: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .projects h2 {
+    font-size: 1.1rem;
+  }
+}
 .projects h3 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   margin: 20px 0 5px 0;
 }
+@media only screen and (min-width: 768px) {
+  .projects h3 {
+    font-size: 1rem;
+  }
+}
 .projects a {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects a {
+    font-size: 0.8rem;
+  }
 }
 .projects p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects p {
+    font-size: 0.8rem;
+  }
 }
 .projects .projectContainer p {
   margin: 0;
@@ -654,8 +721,13 @@ footer .redBar2 {
       -ms-flex-align: end;
           align-items: end;
   text-align: right;
-  margin-right: 10px;
+  margin-right: 0;
   padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .infoContainer {
+    margin-right: 10px;
+  }
 }
 .infoContainer a {
   margin-top: 10px;
@@ -669,11 +741,13 @@ footer .redBar2 {
   margin: 0 10px;
 }
 .infoContainer p {
-  margin-right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 @media only screen and (min-width: 768px) {
   .infoContainer p {
     margin-right: 10px;
+    margin-top: 0;
   }
 }
 

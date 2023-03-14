@@ -4,20 +4,32 @@
 
 /* Typography */
 h2 {
+    @include mq('tablet'){
+        font-size: 1.5rem;
+    }
     margin: 0;
+    font-size: 1.125rem;
 }
 
 .fontLight {
+    @include mq('tablet'){
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
     font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
 h3 {
+    @include mq('tablet'){
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
     margin: 5px;
-    margin-top: 15px;
-    font-size: 1.5rem;
+    margin-top: 0;
+    font-size: 0.75rem;
 }
 
 .rotateText {
@@ -29,11 +41,17 @@ h3 {
 
 /* Block formatting */
 .leftBlock {
-    width: 45%;
+    @include mq('tablet'){
+        width: 45%;
+    }
+    width: 100%;
 }
 
 .topH3 {
-    padding-top: 25px;
+    @include mq('tablet'){
+        padding-top: 25px;
+    }
+    padding-top: 31px;
 }
 
 /* Red bar */
@@ -62,7 +80,7 @@ ul {
         left: 13%
     }
     opacity: 0%;
-    left: 25%;
+    left: 10%;
     padding-top: -20px;
     transition: 0.3s;
     position: absolute;

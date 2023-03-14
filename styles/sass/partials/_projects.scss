@@ -1,4 +1,4 @@
-// @use "./mixins" as *;
+@use "./mixins" as *;
 
 /* Projects styles */
 
@@ -16,21 +16,33 @@
     padding-right: 10px;
 
     h2 {
-        font-size: 1.1rem;
+        @include mq('tablet'){
+            font-size: 1.1rem;
+        }
+        font-size: 0.825rem;
         margin-top: 20px;
     }
 
     h3 {
-        font-size: 1rem;
+        @include mq('tablet'){
+            font-size: 1rem;
+        }
+        font-size: 0.75rem;
         margin: 20px 0 5px 0;
     }
 
     a {
-        font-size: 0.8rem;
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
     }
 
     p {
-        font-size: 0.8rem;
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
     }
 
     .projectContainer {

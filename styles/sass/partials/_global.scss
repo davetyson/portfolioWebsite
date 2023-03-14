@@ -15,21 +15,26 @@ body {
 }
 
 h5 {
+    @include mq('tablet'){
+        font-size: 0.6rem;
+    }
     margin: 10px 0 0 0;
     padding: 0;
-    font-size: 0.6rem;
+    font-size: 0.3rem;
 }
 
 p {
     @include mq('tablet') {
         flex-direction: row;    
         flex-wrap: wrap;
+        font-size: 1rem;
         // padding-left: 10%;
     }
     padding-left: 0;
     transition: 0.3s;
     margin: 0;
     text-align: right;
+    font-size: 0.75rem;
 }
 
 img {
@@ -39,8 +44,12 @@ img {
   }
   
 a {
+    @include mq('tablet'){
+        font-size: 1rem;
+    }
     color: #0D0D0D;
     text-decoration: none;
+    font-size: 0.75rem;
 }
 
 ul {
@@ -51,9 +60,13 @@ ul {
 }
 
 figure {
+    @include mq('tablet'){
+        height: 240px;
+        width: 240px;
+    }
     margin: 0;
-    height: 240px;
-    width: 240px;
+    height: 120px;
+    width: 120px;
     flex-shrink: 0;
 }
 
