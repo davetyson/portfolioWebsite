@@ -601,7 +601,7 @@ footer {
           flex-direction: column;
   height: auto;
   position: fixed;
-  top: 65vh;
+  top: 60vh;
   right: 10%;
   z-index: -10;
 }
@@ -613,7 +613,6 @@ footer {
 @media only screen and (min-width: 768px) {
   footer {
     height: 30vh;
-    top: 60vh;
   }
 }
 footer p {

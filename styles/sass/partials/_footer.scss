@@ -12,7 +12,7 @@ footer {
     }
     @include mq('tablet'){
         height: 30vh;
-        top: 60vh; 
+        // top: 60vh; 
     }
     width: 100%;
     max-width: 1500px;
@@ -21,7 +21,7 @@ footer {
     flex-direction: column;
     height: auto;
     position: fixed;
-    top: 65vh;
+    top: 60vh;
     right: 10%;
     z-index: -10;
 
