@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 /* Info styles */
 
 .infoContainer {
@@ -16,7 +18,10 @@
         }
     }
     p {
-        margin-right: 10px;
+        @include mq('tablet'){
+            margin-right: 10px;
+        }
+        margin-right: 0;
     }
 }
 

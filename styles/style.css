@@ -227,7 +227,8 @@ html {
   overflow: hidden;
 }
 
-/* Global & wrapper styles */
+/* Variables */
+/* Media Query breakpoints */ /* Mixins */ /* Global & wrapper styles */
 /* Global styles */
 html {
   font-size: 125%;
@@ -247,11 +248,21 @@ h5 {
 }
 
 p {
-  padding-left: 70px;
+  padding-left: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 0;
   text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 img {
@@ -267,7 +278,6 @@ a {
 
 ul {
   list-style: none;
-  width: 30%;
   margin: 0;
   padding: 0;
 }
@@ -290,8 +300,22 @@ figure {
   border: 3px solid #000;
   position: relative;
   padding: 5%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .flexbox {
@@ -313,12 +337,23 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
-  max-height: 90%;
-  width: 45%;
+  max-height: 70%;
+  width: 100%;
   margin-left: 10%;
-  margin-top: 3vh;
-  padding-right: 40px;
+  margin-top: auto;
+  margin-bottom: 25%;
+  padding-right: 14vw;
   scrollbar-width: none;
+}
+@media only screen and (min-width: 768px) {
+  .rightBlock {
+    width: 45%;
+    padding-right: 40px;
+    margin-top: 3vh;
+    padding-bottom: 0;
+    max-height: 90%;
+    margin-bottom: 0;
+  }
 }
 .rightBlock a {
   text-align: end;
@@ -423,8 +458,6 @@ figure {
           animation: mainSlideUp 0.6s linear 1;
 }
 
-/* Variables */
-/* Media Query breakpoints */
 /* Header styles */
 /* Typography */
 h2 {
@@ -466,8 +499,13 @@ h3 {
 /* Red bar */
 .redBar {
   height: 20px;
-  width: 100%;
+  width: 75vw;
   background-color: red;
+}
+@media only screen and (min-width: 768px) {
+  .redBar {
+    width: 100%;
+  }
 }
 
 /* Menu block */
@@ -482,18 +520,22 @@ h3 {
 /* Menu list styles */
 ul {
   opacity: 0%;
-  left: 12%;
+  left: 25%;
   padding-top: -20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
   z-index: 30;
 }
+@media only screen and (min-width: 768px) {
+  ul {
+    left: 13%;
+  }
+}
 
 /* .bulletLi {
     font-size: 2rem;
 } */
-/* Mixins */
 /* Footer styles */
 footer {
   width: 100%;
@@ -508,11 +550,22 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 30vh;
+  height: auto;
   position: fixed;
-  top: 60vh;
+  top: 80vh;
   right: 10%;
   z-index: -10;
+}
+@media only screen and (min-width: 1655px) {
+  footer {
+    right: calc(55% - 750px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    height: 30vh;
+    top: 60vh;
+  }
 }
 footer p {
   margin: 0;
@@ -527,14 +580,20 @@ footer .rotateTextMain {
 }
 footer .redBar2 {
   height: 20px;
-  width: 40%;
+  width: 75%;
   background-color: red;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
+@media only screen and (min-width: 768px) {
+  footer .redBar2 {
+    width: 40%;
+  }
+}
 
-/* Index styles */ /* Projects styles */
+/* Index styles */
+/* Projects styles */
 .projects {
   text-align: end;
   height: 100%;
@@ -610,7 +669,12 @@ footer .redBar2 {
   margin: 0 10px;
 }
 .infoContainer p {
-  margin-right: 10px;
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .infoContainer p {
+    margin-right: 10px;
+  }
 }
 
 /* Contact styles */

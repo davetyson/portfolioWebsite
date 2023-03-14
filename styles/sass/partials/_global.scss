@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 /* Global & wrapper styles */
 
 /* Global styles */
@@ -19,7 +21,12 @@ h5 {
 }
 
 p {
-    padding-left: 70px;
+    @include mq('tablet') {
+        flex-direction: row;    
+        flex-wrap: wrap;
+        // padding-left: 10%;
+    }
+    padding-left: 0;
     transition: 0.3s;
     margin: 0;
     text-align: right;
@@ -38,7 +45,7 @@ a {
 
 ul {
     list-style: none;
-    width: 30%;
+    // width: 30%;
     margin: 0;
     padding: 0;
 }
@@ -52,6 +59,10 @@ figure {
 
 /* Wrapper, flexbox, and content block styles */
 .wrapper {
+    @include mq('tablet') {
+        flex-direction: row;    
+        flex-wrap: wrap;
+    }
     margin: 0 auto;
     margin-top: 5vh;
     width: 90%;
@@ -60,7 +71,8 @@ figure {
     border: 3px solid #000;
     position: relative;
     padding: 5%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .flexbox {
@@ -74,16 +86,31 @@ figure {
     // bottom: 5vh;
     // right: 5%;
     // margin: 5% 0% 0% 50%;
+    @include mq('tablet') {
+        width: 45%;
+        padding-right: 40px;
+        margin-top: 3vh;
+        padding-bottom: 0;
+        max-height: 90%;
+        margin-bottom: 0;
+        // position: relative;
+        // height: auto;
+    }
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
     overflow-y: auto;
-    max-height: 90%;
-    width: 45%;
+    max-height: 70%;
+    width: 100%;
     margin-left: 10%;
-    margin-top: 3vh;
-    padding-right: 40px;
+    margin-top: auto;
+    margin-bottom: 25%;
+    padding-right: 14vw;
     scrollbar-width: none;
+    // position: absolute;
+    // right: 10%;
+    // top: 40%;
+
     a {
         text-align: end;
         height: fit-content;

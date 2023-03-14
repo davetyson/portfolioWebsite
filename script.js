@@ -1,5 +1,11 @@
 const portfolioApp = {};
 
+// portfolioApp.projectDrop = () => {
+//     portfolioApp.projects.addEventListener('', function(){
+
+//     })
+// }
+
 portfolioApp.menuReturn = () => {
     portfolioApp.overallMenu.addEventListener('mouseleave', function(){
         portfolioApp.menu.style.opacity='0%';
@@ -24,9 +30,11 @@ portfolioApp.init = () => {
     portfolioApp.menuButton = document.querySelector('.rotateText');
     portfolioApp.overallMenu = document.querySelector('.menu');
     portfolioApp.footerP = document.querySelector('.footerP');
-    portfolioApp.menu = document.querySelector('ul')
+    portfolioApp.menu = document.querySelector('ul');
+    portfolioApp.projects = document.querySelector('projects');
     portfolioApp.menuStart();
     portfolioApp.footerYear();
+    // portfolioApp.projectDrop();
 }
 
 portfolioApp.init();

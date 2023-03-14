@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 /* Header styles */
 
 /* Typography */
@@ -36,9 +38,12 @@ h3 {
 
 /* Red bar */
 .redBar {
+    @include mq('tablet'){
+        width: 100%;
+    }
     height: 20px;
     // width: 380px;
-    width: 100%;
+    width: 75vw;
     background-color: red;
 }
 
@@ -53,8 +58,11 @@ h3 {
 
 /* Menu list styles */
 ul {
+    @include mq('tablet'){
+        left: 13%
+    }
     opacity: 0%;
-    left: 12%;
+    left: 25%;
     padding-top: -20px;
     transition: 0.3s;
     position: absolute;
