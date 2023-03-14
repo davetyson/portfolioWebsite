@@ -601,7 +601,7 @@ footer {
           flex-direction: column;
   height: auto;
   position: fixed;
-  top: 65vh;
+  top: 60vh;
   right: 10%;
   z-index: -10;
 }
