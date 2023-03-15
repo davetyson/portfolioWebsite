@@ -366,10 +366,9 @@ img {
   overflow: auto;
   max-height: 70%;
   width: 100%;
-  margin-left: 10%;
   margin-top: auto;
   margin-bottom: 25%;
-  padding-right: 17vw;
+  padding-right: 30px;
   scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
