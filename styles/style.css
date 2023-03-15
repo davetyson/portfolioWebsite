@@ -708,6 +708,9 @@ footer .redBar2 {
 /* Index styles */
 /* Projects styles */
 .projects {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   text-align: end;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -721,7 +724,8 @@ footer .redBar2 {
 .projects h5,
 .projects p,
 .projects a {
-  z-index: 10;
+  width: 80%;
+  white-space: pre-wrap;
 }
 .projects h2 {
   margin-top: 20px;
