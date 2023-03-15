@@ -621,6 +621,7 @@ a {
 /* Red bar */
 .redBar {
   height: 20px;
+  min-width: 375px;
   width: 80vw;
   background-color: red;
 }
