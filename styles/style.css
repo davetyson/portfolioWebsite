@@ -722,6 +722,9 @@ footer .redBar2 {
 .projects h3 {
   margin: 20px 0 5px 0;
 }
+.projects .projectContainer {
+  z-index: 10;
+}
 .projects .projectContainer p {
   margin: 0;
   padding-top: 2px;
