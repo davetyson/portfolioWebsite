@@ -58,12 +58,12 @@ ul {
 
 figure {
     @include mq('tablet'){
-        height: 240px;
-        width: 240px;
+        height: 284px;
+        width: 284px;
     }
     margin: 0;
-    height: 120px;
-    width: 120px;
+    height: 142px;
+    width: 142px;
     flex-shrink: 0;
 }
 
@@ -100,8 +100,8 @@ img {
 .mainContentBlock {
     @include mq('tablet') {
         width: 45%;
-        padding-right: 40px;
-        margin-top: 3vh;
+        padding-right: 48px;
+        margin-top: 2vh;
         padding-bottom: 0;
         max-height: 90%;
         margin-bottom: 0;
@@ -115,7 +115,7 @@ img {
     margin-left: 10%;
     margin-top: auto;
     margin-bottom: 25%;
-    padding-right: 14vw;
+    padding-right: 17vw;
     scrollbar-width: none;
 
     a {

@@ -294,15 +294,15 @@ ul {
 
 figure {
   margin: 0;
-  height: 120px;
-  width: 120px;
+  height: 142px;
+  width: 142px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 @media only screen and (min-width: 768px) {
   figure {
-    height: 240px;
-    width: 240px;
+    height: 284px;
+    width: 284px;
   }
 }
 
@@ -365,14 +365,14 @@ img {
   margin-left: 10%;
   margin-top: auto;
   margin-bottom: 25%;
-  padding-right: 14vw;
+  padding-right: 17vw;
   scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
     width: 45%;
-    padding-right: 40px;
-    margin-top: 3vh;
+    padding-right: 48px;
+    margin-top: 2vh;
     padding-bottom: 0;
     max-height: 90%;
     margin-bottom: 0;
@@ -400,102 +400,96 @@ html {
 }
 
 h2 {
-  font-size: 1.125rem;
+  font-size: 1.35rem;
 }
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 h3 {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
 }
 
 h5 {
-  font-size: 0.475rem;
+  font-size: 0.57rem;
 }
 @media only screen and (min-width: 768px) {
   h5 {
-    font-size: 0.6rem;
+    font-size: 0.72rem;
   }
 }
 
 p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 a {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 .fa {
-  font-size: 1.125rem;
+  font-size: 1.35rem;
 }
 @media only screen and (min-width: 768px) {
   .fa {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 .fontLight {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) {
   .fontLight {
-    font-size: 2rem;
+    font-size: 2.4rem;
     letter-spacing: 0.2rem;
   }
 }
 
 .projects h2 {
-  font-size: 0.825rem;
+  font-size: 0.99rem;
 }
 @media only screen and (min-width: 768px) {
   .projects h2 {
-    font-size: 1.1rem;
+    font-size: 1.32rem;
   }
 }
 .projects h3 {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   .projects h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
-.projects a {
-  font-size: 0.6rem;
-}
-@media only screen and (min-width: 768px) {
-  .projects a {
-    font-size: 0.8rem;
-  }
-}
+.projects a,
 .projects p {
-  font-size: 0.6rem;
+  font-size: 0.72rem;
 }
 @media only screen and (min-width: 768px) {
+  .projects a,
   .projects p {
-    font-size: 0.8rem;
+    font-size: 0.96rem;
   }
 }
 
