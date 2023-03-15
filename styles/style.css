@@ -276,6 +276,14 @@ p {
 a {
   color: #000;
   text-decoration: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: red;
 }
 
 ul {
