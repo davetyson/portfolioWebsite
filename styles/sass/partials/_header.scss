@@ -38,13 +38,13 @@ h1 {
     position: relative;
     h2 {
         text-align: end;
-        z-index: -10;
     }
     .rotateText {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         padding-bottom: 5px;
         text-align: start;
+        z-index: -10;
     }
     ul {
         @include mq('tablet'){

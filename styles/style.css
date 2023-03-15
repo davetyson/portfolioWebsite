@@ -629,7 +629,6 @@ h1 {
 }
 .menu h2 {
   text-align: end;
-  z-index: -10;
 }
 .menu .rotateText {
   -webkit-writing-mode: vertical-rl;
@@ -639,6 +638,7 @@ h1 {
           transform: rotate(180deg);
   padding-bottom: 5px;
   text-align: start;
+  z-index: -10;
 }
 .menu ul {
   opacity: 0%;
@@ -709,9 +709,6 @@ footer .redBar2 {
 /* Index styles */
 /* Projects styles */
 .projects {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   text-align: end;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -719,13 +716,6 @@ footer .redBar2 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 10px;
-}
-.projects h2,
-.projects h3,
-.projects h5,
-.projects p,
-.projects a {
-  white-space: pre-wrap;
 }
 .projects h2 {
   margin-top: 20px;
