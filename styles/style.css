@@ -707,6 +707,8 @@ footer .redBar2 {
 /* Index styles */
 /* Projects styles */
 .projects {
+  overflow-wrap: break-word;
+  word-break: break-word;
   text-align: end;
   height: 100%;
   -webkit-box-orient: vertical;

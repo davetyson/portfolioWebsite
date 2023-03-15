@@ -17,7 +17,8 @@
     // a {
     // white-space: pre-wrap;
     // }
-
+    overflow-wrap: break-word;
+    word-break: break-word;
     text-align: end;
     height: 100%;
     flex-direction: column;
