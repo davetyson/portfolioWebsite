@@ -2,56 +2,18 @@
 
 /* Header styles */
 
-/* Typography */
-h2 {
-    @include mq('tablet'){
-        font-size: 1.5rem;
-    }
-    margin: 0;
-    font-size: 1.125rem;
-}
-
-.fontLight {
-    @include mq('tablet'){
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-    }
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    @include mq('tablet'){
-        font-size: 1.5rem;
-        margin-top: 15px;
-    }
-    margin: 5px;
-    margin-top: 0;
-    font-size: 0.75rem;
-}
-
-.rotateText {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding-bottom: 5px;
-    text-align: start;
-}
-
-/* Block formatting */
-.leftBlock {
+/* Header block formatting */
+.headerBlock {
     @include mq('tablet'){
         width: 45%;
     }
     width: 100%;
-}
-
-.topH3 {
-    @include mq('tablet'){
-        padding-top: 25px;
+    .topH3 {
+        @include mq('tablet'){
+            padding-top: 25px;
+        }
+        padding-top: 31px;
     }
-    padding-top: 31px;
 }
 
 /* Red bar */
@@ -60,33 +22,32 @@ h3 {
         width: 100%;
     }
     height: 20px;
-    // width: 380px;
     width: 75vw;
     background-color: red;
 }
 
-/* Menu block */
+/* Menu styles */
 .menu {
     position: relative;
-    z-index: 20;
+    z-index: 10;
     h2 {
         text-align: end;
     }
-}
-
-/* Menu list styles */
-ul {
-    @include mq('tablet'){
-        left: 13%
+    .rotateText {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding-bottom: 5px;
+        text-align: start;
     }
-    opacity: 0%;
-    left: 10%;
-    padding-top: -20px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 30;
+    ul {
+        @include mq('tablet'){
+            left: 13%
+        }
+        opacity: 0%;
+        left: 10%;
+        padding-top: -20px;
+        transition: 0.3s;
+        position: absolute;
+        z-index: 20;
+    }
 }
-
-/* .bulletLi {
-    font-size: 2rem;
-} */

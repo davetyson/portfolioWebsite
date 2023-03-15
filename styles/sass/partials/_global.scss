@@ -2,59 +2,49 @@
 
 /* Global & wrapper styles */
 
-/* Global styles */
-html {
-    font-size: 125%;
-    font-family: 'Puritan', sans-serif;
-    font-weight: 700;
-}
+/* Global styles/Stripping auto-styling */
 
 body {
     background-color: #F7D58D;
     overflow: hidden;
 }
 
-h5 {
+h2 {
+    margin: 0;
+}
+
+h3 {
     @include mq('tablet'){
-        font-size: 0.6rem;
+        margin-top: 15px;
     }
-    margin: 10px 0 0 0;
+    margin: 5px;
+    margin-top: 0;
+}
+
+h5 {
+    margin: 0;
+    margin-top: 10px;
     padding: 0;
-    font-size: 0.3rem;
 }
 
 p {
     @include mq('tablet') {
         flex-direction: row;    
         flex-wrap: wrap;
-        font-size: 1rem;
-        // padding-left: 10%;
     }
-    padding-left: 0;
     transition: 0.3s;
     margin: 0;
+    padding: 0;
     text-align: right;
-    font-size: 0.75rem;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
   
 a {
-    @include mq('tablet'){
-        font-size: 1rem;
-    }
-    color: #0D0D0D;
+    color: #000;
     text-decoration: none;
-    font-size: 0.75rem;
 }
 
 ul {
     list-style: none;
-    // width: 30%;
     margin: 0;
     padding: 0;
 }
@@ -70,13 +60,18 @@ figure {
     flex-shrink: 0;
 }
 
-/* Wrapper, flexbox, and content block styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+/* Wrapper & flexbox styles */
 .wrapper {
     @include mq('tablet') {
         flex-direction: row;    
         flex-wrap: wrap;
         height: 90vh;
-        margin-top: 5vh;
     }
     margin: 0 auto;
     margin-top: 5vh;
@@ -94,13 +89,8 @@ figure {
     display: flex;
 }
 
-
-/* New additions after sorting of pages */
-.rightBlock {
-    // position: absolute;
-    // bottom: 5vh;
-    // right: 5%;
-    // margin: 5% 0% 0% 50%;
+/* Content block styles */
+.mainContentBlock {
     @include mq('tablet') {
         width: 45%;
         padding-right: 40px;
@@ -108,13 +98,11 @@ figure {
         padding-bottom: 0;
         max-height: 90%;
         margin-bottom: 0;
-        // position: relative;
-        // height: auto;
     }
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    overflow-y: auto;
+    overflow: auto;
     max-height: 70%;
     width: 100%;
     margin-left: 10%;
@@ -122,9 +110,6 @@ figure {
     margin-bottom: 25%;
     padding-right: 14vw;
     scrollbar-width: none;
-    // position: absolute;
-    // right: 10%;
-    // top: 40%;
 
     a {
         text-align: end;
@@ -135,6 +120,6 @@ figure {
     }
 }
 
-.rightBlock::-webkit-scrollbar {
+.mainContentBlock::-webkit-scrollbar {
     display: none;
 }

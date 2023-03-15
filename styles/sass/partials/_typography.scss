@@ -1,2 +1,102 @@
+@use "./mixins" as *;
+
 /* Typography styles */
 
+html {
+    font-size: 125%;
+    font-family: 'Puritan', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    @include mq('tablet'){
+        font-size: 1.5rem;
+    }
+    font-size: 1.125rem;
+}
+
+h3 {
+    @include mq('tablet'){
+        font-size: 1.5rem;
+    }
+    font-size: 0.75rem;
+}
+
+h5 {
+    @include mq('tablet'){
+        font-size: 0.6rem;
+    }
+    font-size: 0.475rem;
+}
+
+p {
+    @include mq('tablet') {
+        font-size: 1rem;
+    }
+    font-size: 0.75rem;
+}
+
+a {
+    @include mq('tablet'){
+        font-size: 1rem;
+    }
+    font-size: 0.75rem;
+}
+
+.fa {
+    @include mq('tablet'){
+        font-size: 1.5rem;
+    }
+    font-size: 1.125rem;       
+}
+
+.fontLight {
+    @include mq('tablet'){
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.projects {
+
+    h2 {
+        @include mq('tablet'){
+            font-size: 1.1rem;
+        }
+        font-size: 0.825rem;
+    }
+
+    h3 {
+        @include mq('tablet'){
+            font-size: 1rem;
+        }
+        font-size: 0.75rem;
+    }
+
+    a {
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
+    }
+
+    p {
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
+    }
+}
+
+.infoContainer {
+    p {
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
+    }
+}

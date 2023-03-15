@@ -14,50 +14,23 @@
     height: 100%;
     flex-direction: column;
     padding-right: 10px;
-
     h2 {
-        @include mq('tablet'){
-            font-size: 1.1rem;
-        }
-        font-size: 0.825rem;
         margin-top: 20px;
     }
-
     h3 {
-        @include mq('tablet'){
-            font-size: 1rem;
-        }
-        font-size: 0.75rem;
         margin: 20px 0 5px 0;
     }
-
-    a {
-        @include mq('tablet'){
-            font-size: 0.8rem;
-        }
-        font-size: 0.6rem;
-    }
-
-    p {
-        @include mq('tablet'){
-            font-size: 0.8rem;
-        }
-        font-size: 0.6rem;
-    }
-
     .projectContainer {
         p {
             margin: 0;
             padding-top: 2px;
         }
-
         .smallInfoLinks {
             height: fit-content;
             width: fit-content;
             margin-left: auto;
             padding-bottom: 5px;
             p {
-                margin: 0;
                 padding: 0 10px;
                 text-align: center;
             }
@@ -67,13 +40,8 @@
             }
         }
     }
-
     .extraMargin {
         margin-bottom: 20px;
     }
 }
-
-// .justifyProjects {
-//     justify-content: end;
-// }
 

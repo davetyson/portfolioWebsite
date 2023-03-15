@@ -229,36 +229,38 @@ html {
 
 /* Variables */
 /* Media Query breakpoints */ /* Mixins */ /* Global & wrapper styles */
-/* Global styles */
-html {
-  font-size: 125%;
-  font-family: "Puritan", sans-serif;
-  font-weight: 700;
-}
-
+/* Global styles/Stripping auto-styling */
 body {
   background-color: #F7D58D;
   overflow: hidden;
 }
 
-h5 {
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-size: 0.3rem;
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 5px;
+  margin-top: 0;
 }
 @media only screen and (min-width: 768px) {
-  h5 {
-    font-size: 0.6rem;
+  h3 {
+    margin-top: 15px;
   }
 }
 
+h5 {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
 p {
-  padding-left: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 0;
+  padding: 0;
   text-align: right;
-  font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
   p {
@@ -268,25 +270,12 @@ p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 1rem;
   }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 a {
-  color: #0D0D0D;
+  color: #000;
   text-decoration: none;
-  font-size: 0.75rem;
-}
-@media only screen and (min-width: 768px) {
-  a {
-    font-size: 1rem;
-  }
 }
 
 ul {
@@ -309,7 +298,13 @@ figure {
   }
 }
 
-/* Wrapper, flexbox, and content block styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Wrapper & flexbox styles */
 .wrapper {
   margin: 0 auto;
   margin-top: 5vh;
@@ -335,7 +330,6 @@ figure {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 90vh;
-    margin-top: 5vh;
   }
 }
 
@@ -345,8 +339,8 @@ figure {
   display: flex;
 }
 
-/* New additions after sorting of pages */
-.rightBlock {
+/* Content block styles */
+.mainContentBlock {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -357,7 +351,7 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: auto;
+  overflow: auto;
   max-height: 70%;
   width: 100%;
   margin-left: 10%;
@@ -367,7 +361,7 @@ figure {
   scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
-  .rightBlock {
+  .mainContentBlock {
     width: 45%;
     padding-right: 40px;
     margin-top: 3vh;
@@ -376,7 +370,7 @@ figure {
     margin-bottom: 0;
   }
 }
-.rightBlock a {
+.mainContentBlock a {
   text-align: end;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -386,11 +380,128 @@ figure {
   width: 100%;
 }
 
-.rightBlock::-webkit-scrollbar {
+.mainContentBlock::-webkit-scrollbar {
   display: none;
 }
 
-/* Typography styles */ /* Animation styles */
+/* Typography styles */
+html {
+  font-size: 125%;
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 0.475rem;
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-size: 0.6rem;
+  }
+}
+
+p {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+a {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  a {
+    font-size: 1rem;
+  }
+}
+
+.fa {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 768px) {
+  .fa {
+    font-size: 1.5rem;
+  }
+}
+
+.fontLight {
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .fontLight {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.projects h2 {
+  font-size: 0.825rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects h2 {
+    font-size: 1.1rem;
+  }
+}
+.projects h3 {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects h3 {
+    font-size: 1rem;
+  }
+}
+.projects a {
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects a {
+    font-size: 0.8rem;
+  }
+}
+.projects p {
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .projects p {
+    font-size: 0.8rem;
+  }
+}
+
+.infoContainer p {
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .infoContainer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Animation styles */
+/* Menu slide in & out */
 @-webkit-keyframes menuSlide {
   0% {
     -webkit-transform: translateX(-8%);
@@ -439,6 +550,7 @@ figure {
     opacity: 0%;
   }
 }
+/* Text pop up in main content block */
 @-webkit-keyframes mainSlideUp {
   0% {
     -webkit-transform: translateY(20%);
@@ -463,8 +575,8 @@ figure {
     opacity: 100%;
   }
 }
+/* Animation classes */
 .runMenuAnimation {
-  /* transform: translateX(-50%); */
   -webkit-animation: menuSlide 0.3s linear 1;
           animation: menuSlide 0.3s linear 1;
 }
@@ -480,67 +592,20 @@ figure {
 }
 
 /* Header styles */
-/* Typography */
-h2 {
-  margin: 0;
-  font-size: 1.125rem;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-.fontLight {
-  font-weight: 400;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-}
-@media only screen and (min-width: 768px) {
-  .fontLight {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-  }
-}
-
-h3 {
-  margin: 5px;
-  margin-top: 0;
-  font-size: 0.75rem;
-}
-@media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-  }
-}
-
-.rotateText {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  padding-bottom: 5px;
-  text-align: start;
-}
-
-/* Block formatting */
-.leftBlock {
+/* Header block formatting */
+.headerBlock {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .leftBlock {
+  .headerBlock {
     width: 45%;
   }
 }
-
-.topH3 {
+.headerBlock .topH3 {
   padding-top: 31px;
 }
 @media only screen and (min-width: 768px) {
-  .topH3 {
+  .headerBlock .topH3 {
     padding-top: 25px;
   }
 }
@@ -557,34 +622,38 @@ h3 {
   }
 }
 
-/* Menu block */
+/* Menu styles */
 .menu {
   position: relative;
-  z-index: 20;
+  z-index: 10;
 }
 .menu h2 {
   text-align: end;
 }
-
-/* Menu list styles */
-ul {
+.menu .rotateText {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-bottom: 5px;
+  text-align: start;
+}
+.menu ul {
   opacity: 0%;
   left: 10%;
   padding-top: -20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
-  z-index: 30;
+  z-index: 20;
 }
 @media only screen and (min-width: 768px) {
-  ul {
+  .menu ul {
     left: 13%;
   }
 }
 
-/* .bulletLi {
-    font-size: 2rem;
-} */
 /* Footer styles */
 footer {
   width: 100%;
@@ -613,14 +682,9 @@ footer {
 @media only screen and (min-width: 768px) {
   footer {
     height: 30vh;
-    top: 60vh;
   }
 }
-footer p {
-  margin: 0;
-  padding: 0;
-}
-footer .rotateTextMain {
+footer .rotateTextFooter {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -629,7 +693,7 @@ footer .rotateTextMain {
 }
 footer .redBar2 {
   height: 20px;
-  width: 75%;
+  width: 76%;
   background-color: red;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -653,38 +717,10 @@ footer .redBar2 {
   padding-right: 10px;
 }
 .projects h2 {
-  font-size: 0.825rem;
   margin-top: 20px;
 }
-@media only screen and (min-width: 768px) {
-  .projects h2 {
-    font-size: 1.1rem;
-  }
-}
 .projects h3 {
-  font-size: 0.75rem;
   margin: 20px 0 5px 0;
-}
-@media only screen and (min-width: 768px) {
-  .projects h3 {
-    font-size: 1rem;
-  }
-}
-.projects a {
-  font-size: 0.6rem;
-}
-@media only screen and (min-width: 768px) {
-  .projects a {
-    font-size: 0.8rem;
-  }
-}
-.projects p {
-  font-size: 0.6rem;
-}
-@media only screen and (min-width: 768px) {
-  .projects p {
-    font-size: 0.8rem;
-  }
 }
 .projects .projectContainer p {
   margin: 0;
@@ -701,7 +737,6 @@ footer .redBar2 {
   padding-bottom: 5px;
 }
 .projects .projectContainer .smallInfoLinks p {
-  margin: 0;
   padding: 0 10px;
   text-align: center;
 }
@@ -735,6 +770,10 @@ footer .redBar2 {
 .infoContainer a {
   margin-top: 10px;
 }
+.infoContainer p {
+  margin-right: 10px;
+  margin-top: 10px;
+}
 .infoContainer .socialBox {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -742,16 +781,6 @@ footer .redBar2 {
 }
 .infoContainer .socialBox a {
   margin: 0 10px;
-}
-.infoContainer p {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-@media only screen and (min-width: 768px) {
-  .infoContainer p {
-    margin-right: 10px;
-    margin-top: 0;
-  }
 }
 
 /* Contact styles */

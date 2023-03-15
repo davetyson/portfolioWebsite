@@ -1,11 +1,7 @@
+// Declare portfolioApp
 const portfolioApp = {};
 
-// portfolioApp.projectDrop = () => {
-//     portfolioApp.projects.addEventListener('', function(){
-
-//     })
-// }
-
+// Menu slide-back (return) function
 portfolioApp.menuReturn = () => {
     portfolioApp.overallMenu.addEventListener('mouseleave', function(){
         portfolioApp.menu.style.opacity='0%';
@@ -13,6 +9,7 @@ portfolioApp.menuReturn = () => {
     });
 }
 
+//  Menu slide-forward (start) function
 portfolioApp.menuStart = () => {
         portfolioApp.menuButton.addEventListener('mouseover', function(){
             portfolioApp.menu.style.opacity='100%';
@@ -21,11 +18,13 @@ portfolioApp.menuStart = () => {
     });
 }   
 
+// Function to grab current year for footer copyright
 portfolioApp.footerYear = () => {
     let currentYear = new Date().getFullYear();
     portfolioApp.footerP.innerHTML = `© Dave Tyson ${currentYear}`;
 }
 
+// Initialize variables and functions needed for script
 portfolioApp.init = () => {
     portfolioApp.menuButton = document.querySelector('.rotateText');
     portfolioApp.overallMenu = document.querySelector('.menu');
@@ -34,31 +33,7 @@ portfolioApp.init = () => {
     portfolioApp.projects = document.querySelector('projects');
     portfolioApp.menuStart();
     portfolioApp.footerYear();
-    // portfolioApp.projectDrop();
 }
 
+// Initialize portfolioApp
 portfolioApp.init();
-
-
-// setTimeout(() => {
-//      projectList.style='overflow: hidden';
-// }, "300");
-
-// setTimeout(() => {if (projectList.scrollHeight >= 717) {
-//     // projectList.style='overflow: auto'
-//     projectList.style='justify-content: end';
-// }
-// else {
-//     // // projectList.style='overflow: auto'
-//     // projectList.classList='mainSlideUp projects flexbox';
-// }
-// }, "301");
-
-  
-
-//scroll height 717
-//what if I say...
-    // if scroll height >= 717 then
-        // apply class of justify-content: end
-    // else
-        // remove class of justify-content: end

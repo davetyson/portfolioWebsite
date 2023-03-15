@@ -1,9 +1,5 @@
 @use "./mixins" as *;
 
-// @include mq('tablet-wide') {
-//     display: block;
-// }
-
 /* Footer styles */
 
 footer {
@@ -12,7 +8,6 @@ footer {
     }
     @include mq('tablet'){
         height: 30vh;
-        top: 60vh; 
     }
     width: 100%;
     max-width: 1500px;
@@ -25,12 +20,7 @@ footer {
     right: 10%;
     z-index: -10;
 
-    p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .rotateTextMain {
+    .rotateTextFooter {
         writing-mode: vertical-rl;
         padding-bottom: 5px;
         text-align: end;
@@ -41,7 +31,7 @@ footer {
             width: 40%;
         }
         height: 20px;
-        width: 75%;
+        width: 76%;
         background-color: red;
         justify-content: end;
     }

@@ -1,5 +1,6 @@
 /* Animation styles */
 
+/* Menu slide in & out */
 @keyframes menuSlide {
     0% {
         transform: translateX(-8%);
@@ -23,6 +24,7 @@
     }
 }
 
+/* Text pop up in main content block */
 @keyframes mainSlideUp {
     0% {
         transform: translateY(20%);
@@ -34,13 +36,12 @@
     }
 }
 
+/* Animation classes */
 .runMenuAnimation {
-    /* transform: translateX(-50%); */
     animation: menuSlide 0.3s linear 1;
 }
 
 .menuSlideBack {
-    // position: absolute;
     animation: menuSlideBack 0.3s linear 1;
 }
 
