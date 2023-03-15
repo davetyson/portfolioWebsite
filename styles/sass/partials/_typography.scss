@@ -30,14 +30,15 @@ h3 {
 
 h5 {
     @include mq('tablet'){
-        // font-size: 0.6rem;
-        font-size: 0.72rem;
+        // font-size: 0.6rem; this is the original one
+        // font-size: 0.72rem; this is the +20% one
         // these two are the headings, they are both under the limit
         // it might be best to just match them to other headings, rather than bump everything else up, as this is just for the footnotes
         // 0.72rem
     }
-    // font-size: 0.475rem;
-    font-size: 0.57rem;
+    // font-size: 0.475rem; this is the original one
+    // font-size: 0.57rem; this is the +20% one
+    font-size: 0.9rem;
 }
 
 p {
@@ -64,7 +65,7 @@ a {
         font-size: 1.8rem;
     }
     // font-size: 1.125rem;
-    font-size: 1.35rem;  
+    font-size: 1.35rem;
 }
 
 .fontLight {
@@ -88,27 +89,31 @@ a {
             font-size: 1.32rem;
         }
         // font-size: 0.825rem;
-        font-size: 0.99rem;
+        // font-size: 0.99rem;
+        font-size: 1.2rem;
 
     }
 
     h3 {
         @include mq('tablet'){
             // font-size: 1rem;
-            font-size: 1.2rem;
+            // font-size: 1.2rem;
         }
         // font-size: 0.75rem;
-        font-size: 0.9rem;
+        // font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     a,
     p {
         @include mq('tablet'){
             // font-size: 0.8rem;
+            // font-size: 0.96rem;
             font-size: 0.96rem;
         }
         // font-size: 0.6rem;
-        font-size: 0.72rem;
+        // font-size: 0.72rem;
+        font-size: 0.9rem;
     }
 
     // p {

@@ -5,7 +5,7 @@ const portfolioApp = {};
 portfolioApp.menuReturn = () => {
     portfolioApp.overallMenu.addEventListener('mouseleave', function(){
         portfolioApp.menu.style.opacity='0%';
-        portfolioApp.menu.classList='menuSlideBack';
+        portfolioApp.menu.classList='menuSlideBack flexbox';
     });
 }
 
@@ -13,7 +13,7 @@ portfolioApp.menuReturn = () => {
 portfolioApp.menuStart = () => {
         portfolioApp.menuButton.addEventListener('mouseover', function(){
             portfolioApp.menu.style.opacity='100%';
-            portfolioApp.menu.classList='runMenuAnimation'
+            portfolioApp.menu.classList='runMenuAnimation flexbox'
             portfolioApp.menuReturn();
     });
 }   

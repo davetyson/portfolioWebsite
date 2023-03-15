@@ -292,6 +292,10 @@ ul {
   padding: 0;
 }
 
+li {
+  margin: 10px 10px 0 10px;
+}
+
 figure {
   margin: 0;
   height: 142px;
@@ -418,14 +422,8 @@ h3 {
 }
 
 h5 {
-  font-size: 0.57rem;
+  font-size: 0.9rem;
 }
-@media only screen and (min-width: 768px) {
-  h5 {
-    font-size: 0.72rem;
-  }
-}
-
 p {
   font-size: 0.9rem;
 }
@@ -467,7 +465,7 @@ a {
 }
 
 .projects h2 {
-  font-size: 0.99rem;
+  font-size: 1.2rem;
 }
 @media only screen and (min-width: 768px) {
   .projects h2 {
@@ -475,16 +473,11 @@ a {
   }
 }
 .projects h3 {
-  font-size: 0.9rem;
-}
-@media only screen and (min-width: 768px) {
-  .projects h3 {
-    font-size: 1.2rem;
-  }
+  font-size: 1.2rem;
 }
 .projects a,
 .projects p {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   .projects a,
@@ -595,6 +588,10 @@ a {
 
 /* Header styles */
 /* Header block formatting */
+h1 {
+  white-space: nowrap;
+}
+
 .headerBlock {
   width: 100%;
 }
@@ -622,7 +619,7 @@ a {
 @media only screen and (min-width: 768px) {
   .redBar {
     width: 100%;
-    min-width: 375px;
+    min-width: 475px;
   }
 }
 
@@ -645,7 +642,7 @@ a {
 }
 .menu ul {
   opacity: 0%;
-  left: 10%;
+  left: 9%;
   padding-top: -20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -654,7 +651,7 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .menu ul {
-    left: 13%;
+    left: 11%;
   }
 }
 

@@ -3,6 +3,10 @@
 /* Header styles */
 
 /* Header block formatting */
+h1 {
+    white-space: nowrap;
+}
+
 .headerBlock {
     @include mq('tablet'){
         width: 45%;
@@ -20,7 +24,7 @@
 .redBar {
     @include mq('tablet'){
         width: 100%;
-        min-width: 375px;
+        min-width: 475px;
 
     }
     height: 20px;
@@ -44,10 +48,10 @@
     }
     ul {
         @include mq('tablet'){
-            left: 13%
+            left: 11%
         }
         opacity: 0%;
-        left: 10%;
+        left: 9%;
         padding-top: -20px;
         transition: 0.3s;
         position: absolute;
