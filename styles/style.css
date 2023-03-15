@@ -613,7 +613,7 @@ a {
 /* Red bar */
 .redBar {
   height: 20px;
-  width: 75vw;
+  width: 80vw;
   background-color: red;
 }
 @media only screen and (min-width: 768px) {
@@ -693,7 +693,7 @@ footer .rotateTextFooter {
 }
 footer .redBar2 {
   height: 20px;
-  width: 76%;
+  width: 80%;
   background-color: red;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
