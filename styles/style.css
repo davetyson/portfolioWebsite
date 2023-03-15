@@ -716,14 +716,18 @@ footer .redBar2 {
           flex-direction: column;
   padding-right: 10px;
 }
+.projects h2,
+.projects h3,
+.projects h5,
+.projects p,
+.projects a {
+  z-index: 10;
+}
 .projects h2 {
   margin-top: 20px;
 }
 .projects h3 {
   margin: 20px 0 5px 0;
-}
-.projects .projectContainer {
-  z-index: 10;
 }
 .projects .projectContainer p {
   margin: 0;

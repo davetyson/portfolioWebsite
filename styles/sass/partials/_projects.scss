@@ -9,6 +9,13 @@
     // @include mqv(1000px) {
     //     justify-content: end;    
     // }
+    h2,
+    h3,
+    h5,
+    p,
+    a {
+        z-index: 10;
+    }
 
     text-align: end;
     height: 100%;
@@ -21,7 +28,6 @@
         margin: 20px 0 5px 0;
     }
     .projectContainer {
-        z-index: 10;
         p {
             margin: 0;
             padding-top: 2px;
