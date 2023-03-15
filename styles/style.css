@@ -629,6 +629,7 @@ h1 {
 }
 .menu h2 {
   text-align: end;
+  z-index: -10;
 }
 .menu .rotateText {
   -webkit-writing-mode: vertical-rl;
