@@ -43,6 +43,10 @@ a {
     font-size: 0.75rem;
 }
 
+button {
+    font-family: 'Puritan', sans-serif;
+}
+
 .fa {
     @include mq('tablet'){
         font-size: 1.5rem;

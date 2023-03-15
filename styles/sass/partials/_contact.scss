@@ -1,5 +1,51 @@
+@use "./mixins" as *;
+
 /* Contact styles */
 
-// .contactLink {
-//     z-index: 10;
-// }
+.contact-form {
+    margin: 0 auto;
+    width: 90%;
+    form {
+        background-color: transparent;
+        fieldset {
+            border: none;
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: transparent;
+        }
+        input:focus,
+        textarea:focus {
+            outline: 0;
+        }
+        textarea {
+            border: 1px solid black;
+            background-color: transparent;
+            height: 20vh;
+            min-width: 200px;
+        }
+        #name {
+            margin-right: 10px;
+        }
+        #email {
+            margin-left: 10px;
+        }
+        textarea {
+            margin: 10px 0;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            border: 3px solid black;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}
