@@ -363,14 +363,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: auto;
   max-height: 70%;
   width: 100%;
   margin-left: 0;
   margin-top: auto;
   margin-bottom: 25%;
   padding-right: 30px;
-  scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
@@ -393,8 +391,18 @@ img {
   width: 100%;
 }
 
-.mainContentBlock::-webkit-scrollbar {
+.mainContentBlock::-webkit-scrollbar .projects::-webkit-scrollbar,
+.infoContainer::-webkit-scrollbar,
+.contactForm::-webkit-scrollbar {
   display: none;
+}
+
+.mainContentBlock,
+.projects,
+.infoContainer,
+.contactForm {
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 /* Typography styles */
@@ -761,8 +769,6 @@ footer .redBar2 {
   text-align: right;
   margin-right: 0;
   padding-bottom: 20px;
-  overflow: auto;
-  scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
   .infoContainer {
@@ -786,8 +792,55 @@ footer .redBar2 {
   margin: 0 10px;
 }
 
-.infoContainer::-webkit-scrollbar {
-  display: none;
-}
-
 /* Contact styles */
+/* Contact styles */
+.contactForm {
+  margin: 0 auto;
+  width: 90%;
+}
+.contactForm form {
+  background-color: transparent;
+}
+.contactForm form .formInputs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm form fieldset {
+  border: none;
+}
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+}
+.contactForm form input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  margin: 5px 0;
+}
+.contactForm form input:focus,
+.contactForm form textarea:focus {
+  outline: 0;
+}
+.contactForm form textarea {
+  border: 1px solid black;
+  background-color: transparent;
+  height: 20vh;
+  min-width: 200px;
+  margin: 10px 0;
+}
+.contactForm form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: 3px solid black;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
