@@ -112,7 +112,7 @@ img {
 .mainContentBlock {
     @include mq('tablet') {
         width: 45%;
-        padding-right: 48px;
+        // padding-right: 48px;
         margin-top: 2vh;
         padding-bottom: 0;
         max-height: 90%;
@@ -129,7 +129,8 @@ img {
     margin-left: 0;
     margin-top: auto;
     margin-bottom: 25%;
-    padding-right: 0;
+    // padding-right: 30px;
+    // padding-right: 0;
     a {
         text-align: end;
         height: fit-content;
@@ -141,6 +142,15 @@ img {
 
 .mainContentBlock::-webkit-scrollbar {
     display: none;
+}
+
+.projects,
+.infoContainer,
+.missionStatement {
+    @include mq('tablet') {
+        padding-right: 48px;
+    }
+    padding-right: 30px;
 }
 
 

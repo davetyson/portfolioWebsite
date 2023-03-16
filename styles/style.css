@@ -372,12 +372,10 @@ img {
   margin-left: 0;
   margin-top: auto;
   margin-bottom: 25%;
-  padding-right: 0;
 }
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
     width: 45%;
-    padding-right: 48px;
     margin-top: 2vh;
     padding-bottom: 0;
     max-height: 90%;
@@ -397,6 +395,19 @@ img {
 
 .mainContentBlock::-webkit-scrollbar {
   display: none;
+}
+
+.projects,
+.infoContainer,
+.missionStatement {
+  padding-right: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .projects,
+  .infoContainer,
+  .missionStatement {
+    padding-right: 48px;
+  }
 }
 
 /* Typography styles */
