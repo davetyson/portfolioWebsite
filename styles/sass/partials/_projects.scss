@@ -3,12 +3,6 @@
 /* Projects styles */
 
 .projects {
-    // This justify-content thing is the key style difference between the scroll that locks to the top, and non-scroll that locks to the bottom of the div. could maybe be done with a MQ that hits at a certain screen height
-    // justify-content: end;
-
-    // @include mqv(1000px) {
-    //     justify-content: end;    
-    // }
     text-align: end;
     height: 100%;
     flex-direction: column;

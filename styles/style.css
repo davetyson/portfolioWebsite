@@ -230,15 +230,9 @@ html {
 /* Variables */
 /* Media Query breakpoints */ /* Mixins */ /* Global & wrapper styles */
 /* Global styles/Stripping auto-styling */
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   background-color: #F7D58D;
   overflow: hidden;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 h1, h2 {
@@ -767,6 +761,8 @@ footer .redBar2 {
   text-align: right;
   margin-right: 0;
   padding-bottom: 20px;
+  overflow: auto;
+  scrollbar-width: none;
 }
 @media only screen and (min-width: 768px) {
   .infoContainer {
@@ -788,6 +784,10 @@ footer .redBar2 {
 }
 .infoContainer .socialBox a {
   margin: 0 10px;
+}
+
+.infoContainer::-webkit-scrollbar {
+  display: none;
 }
 
 /* Contact styles */
