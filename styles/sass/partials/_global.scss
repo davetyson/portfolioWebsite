@@ -126,7 +126,6 @@ img {
     margin-top: auto;
     margin-bottom: 25%;
     padding-right: 30px;
-
     a {
         text-align: end;
         height: fit-content;
@@ -135,12 +134,6 @@ img {
         width: 100%;
     }
 }
-.mainContentBlock::-webkit-scrollbar
-.projects::-webkit-scrollbar,
-.infoContainer::-webkit-scrollbar,
-.contactForm::-webkit-scrollbar {
-    display: none;
-}
 
 .mainContentBlock,
 .projects,
@@ -148,4 +141,11 @@ img {
 .contactForm {
     overflow: auto;
     scrollbar-width: none;
+}
+
+.mainContentBlock::-webkit-scrollbar
+.projects::-webkit-scrollbar,
+.infoContainer::-webkit-scrollbar,
+.contactForm::-webkit-scrollbar {
+    display: none;
 }

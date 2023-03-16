@@ -391,18 +391,18 @@ img {
   width: 100%;
 }
 
-.mainContentBlock::-webkit-scrollbar .projects::-webkit-scrollbar,
-.infoContainer::-webkit-scrollbar,
-.contactForm::-webkit-scrollbar {
-  display: none;
-}
-
 .mainContentBlock,
 .projects,
 .infoContainer,
 .contactForm {
   overflow: auto;
   scrollbar-width: none;
+}
+
+.mainContentBlock::-webkit-scrollbar .projects::-webkit-scrollbar,
+.infoContainer::-webkit-scrollbar,
+.contactForm::-webkit-scrollbar {
+  display: none;
 }
 
 /* Typography styles */
@@ -792,7 +792,6 @@ footer .redBar2 {
   margin: 0 10px;
 }
 
-/* Contact styles */
 /* Contact styles */
 .contactForm {
   margin: 0 auto;
