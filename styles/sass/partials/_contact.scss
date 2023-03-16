@@ -4,7 +4,6 @@
 
 .contactForm {
     overflow: auto;
-    scrollbar-width: none;
     margin: 0 auto;
     width: 90%;
     form {
@@ -40,14 +39,11 @@
             display: flex;
             justify-content: center;
             background-color: transparent;
+            color: #000;
             border: 3px solid black;
             width: 50%;
             margin: 0 auto;
             margin-bottom: 20px;
         }
     }
-}
-
-.contactForm::-webkit-scrollbar {
-    display: none;
 }
