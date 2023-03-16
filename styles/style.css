@@ -355,6 +355,8 @@ img {
 
 /* Content block styles */
 .mainContentBlock {
+  overflow: auto;
+  scrollbar-width: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

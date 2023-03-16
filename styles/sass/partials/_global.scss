@@ -119,6 +119,8 @@ img {
         margin-bottom: 0;
         margin-left: 10%;
     }
+    overflow: auto;
+    scrollbar-width: none;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
