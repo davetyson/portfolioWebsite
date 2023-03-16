@@ -851,3 +851,7 @@ footer .redBar2 {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.contactForm::-webkit-scrollbar {
+  display: none;
+}
