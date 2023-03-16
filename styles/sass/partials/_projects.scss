@@ -3,6 +3,8 @@
 /* Projects styles */
 
 .projects {
+    overflow: auto;
+    scrollbar-width: none;
     text-align: end;
     height: 100%;
     flex-direction: column;
@@ -36,5 +38,9 @@
     .extraMargin {
         margin-bottom: 20px;
     }
+}
+
+.projects::-webkit-scrollbar {
+    display: none;
 }
 

@@ -318,6 +318,8 @@ img {
 
 /* Wrapper & flexbox styles */
 .wrapper {
+  overflow: auto;
+  scrollbar-width: none;
   margin: 0 auto;
   margin-top: 5vh;
   width: 90%;
@@ -391,17 +393,7 @@ img {
   width: 100%;
 }
 
-.mainContentBlock,
-.projects,
-.infoContainer,
-.contactForm {
-  overflow: auto;
-  scrollbar-width: none;
-}
-
-.mainContentBlock::-webkit-scrollbar .projects::-webkit-scrollbar,
-.infoContainer::-webkit-scrollbar,
-.contactForm::-webkit-scrollbar {
+.mainContentBlock::-webkit-scrollbar {
   display: none;
 }
 
@@ -717,6 +709,8 @@ footer .redBar2 {
 /* Index styles */
 /* Projects styles */
 .projects {
+  overflow: auto;
+  scrollbar-width: none;
   text-align: end;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -757,8 +751,14 @@ footer .redBar2 {
   margin-bottom: 20px;
 }
 
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
 /* Info styles */
 .infoContainer {
+  overflow: auto;
+  scrollbar-width: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -792,8 +792,14 @@ footer .redBar2 {
   margin: 0 10px;
 }
 
+.infoContainer::-webkit-scrollbar {
+  display: none;
+}
+
 /* Contact styles */
 .contactForm {
+  overflow: auto;
+  scrollbar-width: none;
   margin: 0 auto;
   width: 90%;
 }
@@ -842,4 +848,8 @@ footer .redBar2 {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.contactForm::-webkit-scrollbar {
+  display: none;
 }

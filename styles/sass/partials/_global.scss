@@ -90,6 +90,8 @@ img {
         flex-wrap: wrap;
         height: 90vh;
     }
+    overflow: auto;
+    scrollbar-width: none;
     margin: 0 auto;
     margin-top: 5vh;
     width: 90%;
@@ -135,17 +137,22 @@ img {
     }
 }
 
-.mainContentBlock,
-.projects,
-.infoContainer,
-.contactForm {
-    overflow: auto;
-    scrollbar-width: none;
-}
-
-.mainContentBlock::-webkit-scrollbar
-.projects::-webkit-scrollbar,
-.infoContainer::-webkit-scrollbar,
-.contactForm::-webkit-scrollbar {
+.mainContentBlock::-webkit-scrollbar {
     display: none;
 }
+
+
+// .mainContentBlock,
+// .projects,
+// .infoContainer,
+// .contactForm {
+//     overflow: auto;
+//     scrollbar-width: none;
+// }
+
+// .mainContentBlock::-webkit-scrollbar
+// .projects::-webkit-scrollbar,
+// .infoContainer::-webkit-scrollbar,
+// .contactForm::-webkit-scrollbar {
+//     display: none;
+// }

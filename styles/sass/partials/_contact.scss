@@ -3,6 +3,8 @@
 /* Contact styles */
 
 .contactForm {
+    overflow: auto;
+    scrollbar-width: none;
     margin: 0 auto;
     width: 90%;
     form {
@@ -44,4 +46,8 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.contactForm::-webkit-scrollbar {
+    display: none;
 }
