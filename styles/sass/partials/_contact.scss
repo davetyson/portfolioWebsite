@@ -56,3 +56,12 @@
 .contactForm::-webkit-scrollbar {
     display: none;
 }
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+
+  ::-ms-input-placeholder {
+    color: #000;
+  }
