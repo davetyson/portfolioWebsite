@@ -649,7 +649,6 @@ h1 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
-  z-index: 20;
 }
 @media only screen and (min-width: 768px) {
   .menu ul {
