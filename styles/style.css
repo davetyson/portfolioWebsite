@@ -230,9 +230,15 @@ html {
 /* Variables */
 /* Media Query breakpoints */ /* Mixins */ /* Global & wrapper styles */
 /* Global styles/Stripping auto-styling */
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   background-color: #F7D58D;
   overflow: hidden;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 h1, h2 {
