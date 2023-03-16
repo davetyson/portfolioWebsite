@@ -800,6 +800,7 @@ footer .redBar2 {
 /* Contact styles */
 .contactForm {
   overflow: auto;
+  scrollbar-width: none;
   margin: 0 auto;
   width: 90%;
 }
@@ -814,6 +815,12 @@ footer .redBar2 {
 }
 .contactForm form fieldset {
   border: none;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contactForm form fieldset {
+    margin-top: 0;
+  }
 }
 .contactForm form input,
 .contactForm form textarea {

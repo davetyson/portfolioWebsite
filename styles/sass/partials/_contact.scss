@@ -4,6 +4,7 @@
 
 .contactForm {
     overflow: auto;
+    scrollbar-width: none;
     margin: 0 auto;
     width: 90%;
     form {
@@ -12,7 +13,11 @@
             flex-direction: column;
         }
         fieldset {
+            @include mq('tablet'){
+                margin-top: 0;
+            }
             border: none;
+            margin-top: 20px;
         }
         input,
         textarea {
