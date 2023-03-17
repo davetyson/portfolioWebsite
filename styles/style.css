@@ -364,18 +364,6 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media only screen and (min-width: 768px) {
-  .colourChanges {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 .colourChanges .colourBox {
   width: 0.9rem;
