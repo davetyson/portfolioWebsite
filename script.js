@@ -92,6 +92,8 @@ portfolioApp.init = () => {
     portfolioApp.currentColour = window.localStorage.getItem("colour");
     console.log(portfolioApp.currentColour);
 
+    // In here I've added 'localStorage.clear' which means that this works perfectly as the user clicks into the 2nd page after choosing a theme, but then on clicking the 3rd page (assuming they have not picked another theme), it will default to yellow again. This is the closest thing to stability/predictability I've got on this so I'm leaving this here for now like this
+
     if (window.localStorage.getItem("colour") === "blue") {
         portfolioApp.html.classList = "blue";
         console.log(window.localStorage.getItem("colour"));
