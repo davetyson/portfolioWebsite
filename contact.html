@@ -31,25 +31,24 @@
 
             <!-- Navigation menu -->
             <div class="menu flexbox">
-                <h2 class="rotateText">Menu</h2>
+                <button class="rotateText">Menu</button>
                 <ul>
                     <li><a href="./">Home</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="./info.html">Info</a></li>
-                    <li>&#8226</li>
+                    <li>&#8226<span class="sr-only">Contact</span></li>
                 </ul>
             </div>
         </header>
 
         <!-- Main content block - Contact -->
         <main class="mainContentBlock flexbox">
-            <!-- <a href="mailto:dave@davetyson.tech" class="mainSlideUp">&#8598 Contact me by email</a> -->
             <div class="contactForm">
                 <form method="post" name="emailContactForm" action="https://formspree.io/f/mbjekebq">
                     <fieldset>
                         <div class="formInputs flexbox">
                             <label class="sr-only" for="name">Name</label>
-                            <input id="name" type="name" name="name" placeholder="Name" autocomplete="off">
+                            <input id="name" type="name" name="name" placeholder="Name">
                             <label class="sr-only" for="email">Email</label>
                             <input id="email" type="email" name="email" placeholder="Email">
                         </div>

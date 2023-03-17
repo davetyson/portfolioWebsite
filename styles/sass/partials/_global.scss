@@ -112,7 +112,6 @@ img {
 .mainContentBlock {
     @include mq('tablet') {
         width: 45%;
-        // padding-right: 48px;
         margin-top: 2vh;
         padding-bottom: 0;
         max-height: 90%;
@@ -129,14 +128,20 @@ img {
     margin-left: 0;
     margin-top: auto;
     margin-bottom: 25%;
-    // padding-right: 30px;
-    // padding-right: 0;
     a {
         text-align: end;
         height: fit-content;
         margin-top: 70px;
         margin-right: 10px;
         width: 100%;
+    }
+}
+
+.headerBlock {
+    button {
+        background-color: transparent;
+        color: #000;
+        border: none;
     }
 }
 
@@ -152,19 +157,3 @@ img {
     }
     padding-right: 30px;
 }
-
-
-// .mainContentBlock,
-// .projects,
-// .infoContainer,
-// .contactForm {
-//     overflow: auto;
-//     scrollbar-width: none;
-// }
-
-// .mainContentBlock::-webkit-scrollbar
-// .projects::-webkit-scrollbar,
-// .infoContainer::-webkit-scrollbar,
-// .contactForm::-webkit-scrollbar {
-//     display: none;
-// }

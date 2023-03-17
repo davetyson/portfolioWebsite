@@ -393,6 +393,12 @@ img {
   width: 100%;
 }
 
+.headerBlock button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+}
+
 .mainContentBlock::-webkit-scrollbar {
   display: none;
 }
@@ -453,6 +459,20 @@ a {
 @media only screen and (min-width: 768px) {
   a {
     font-size: 1.2rem;
+  }
+}
+
+button {
+  font-family: "Puritan", sans-serif;
+}
+
+.menu button {
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+@media only screen and (min-width: 768px) {
+  .menu button {
+    font-size: 1.8rem;
   }
 }
 
