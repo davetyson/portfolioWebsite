@@ -358,8 +358,7 @@ img {
 
 /* Colour Change box styles */
 .colourChanges {
-  border: 3px solid #000;
-  margin: 5px auto 0 auto;
+  margin: 2px auto 0 auto;
   padding: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
