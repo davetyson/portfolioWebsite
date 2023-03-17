@@ -24,7 +24,7 @@ portfolioApp.footerYear = () => {
     portfolioApp.footerP.innerHTML = `© Dave Tyson ${currentYear}`;
 }
 
-// Formspree code to clear form after submission
+// Formspree code to clear contact form after submission
 portfolioApp.formspreeClear = () => {
     window.onbeforeunload = () => {
         for(const form of document.getElementsByTagName('form')) {
@@ -39,6 +39,7 @@ portfolioApp.changeYellow = () => {
         portfolioApp.html.setAttribute("colour","yellow");
         portfolioApp.html.classList = "yellow";
         window.localStorage.setItem("colour", "yellow");
+        // portfolioApp.currentColour = "colour=yellow";
     })
 }
 
@@ -48,6 +49,7 @@ portfolioApp.changeBlue = () => {
         portfolioApp.html.setAttribute("colour","blue");
         portfolioApp.html.classList = "blue";
         window.localStorage.setItem("colour", "blue");
+        // portfolioApp.currentColour = "colour=blue";
     })
 }
 
@@ -57,6 +59,8 @@ portfolioApp.changeGreen = () => {
         portfolioApp.html.setAttribute("colour","green");
         portfolioApp.html.classList = "green";
         window.localStorage.setItem("colour", "green");
+        // portfolioApp.currentColour = "colour=green";
+
     })
 }
 
@@ -67,7 +71,8 @@ portfolioApp.changeGradient = () => {
         portfolioApp.html.setAttribute("colour","gradient");
         portfolioApp.html.classList = "gradient";
         window.localStorage.setItem("colour", "gradient");
-        console.log(window.localStorage.getItem("colour"));
+        // console.log(window.localStorage.getItem("colour"));
+        // portfolioApp.currentColour = "colour=gradient";
     })
 }
 
@@ -111,6 +116,27 @@ portfolioApp.init = () => {
         console.log(window.localStorage.getItem("colour"));
         localStorage.clear();
     }
+
+    // COOKIE EXPERIMENTS
+    // Pretty sure this is the only way I am going to get the theme colour to stay the same as the most recently picked theme from page to page without it turning back to yellow, but I'm not sure how they work just yet
+    // Would need help with this! For now leaving the local storage option which at least give us 2 pages of the right colour before resetting
+
+    // portfolioApp.currentColour = document.cookie;
+    // console.log(currentColour);
+
+    // if (portfolioApp.currentColour != "null") {
+    //     if (portfolioApp.currentColour = "colour=blue") {
+    //         portfolioApp.html.classList = "blue";
+    //     } else if (portfolioApp.currentColour = "colour=green") {
+    //         portfolioApp.html.classList = "green";
+    //     } else if (portfolioApp.currentColour = "colour=gradient") {
+    //         portfolioApp.html.classList = "gradient";
+    //     } else {
+    //         portfolioApp.html.classList = "yellow";
+    //     }
+    // } else {
+    //     document.cookie = "colour=null";
+    // }
 
     // Call functions
     portfolioApp.menuStart();
