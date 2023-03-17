@@ -35,29 +35,39 @@ portfolioApp.formspreeClear = () => {
 
 // Function to change colour to yellow
 portfolioApp.changeYellow = () => {
-    portfolioApp.yellow.addEventListener('click', function() {
+        portfolioApp.yellow.addEventListener('click', function() {
+        portfolioApp.html.setAttribute("colour","yellow");
         portfolioApp.html.classList = "yellow";
+        window.localStorage.setItem("colour", "yellow");
     })
 }
 
 // Function to change colour to blue
 portfolioApp.changeBlue = () => {
     portfolioApp.blue.addEventListener('click', () => {
+        portfolioApp.html.setAttribute("colour","blue");
         portfolioApp.html.classList = "blue";
+        window.localStorage.setItem("colour", "blue");
     })
 }
 
 // Function to change colour to green
 portfolioApp.changeGreen = () => {
     portfolioApp.green.addEventListener('click', () => {
+        portfolioApp.html.setAttribute("colour","green");
         portfolioApp.html.classList = "green";
+        window.localStorage.setItem("colour", "green");
     })
 }
 
 // Function to change colour to gradient
 portfolioApp.changeGradient = () => {
+    console.log(localStorage);
     portfolioApp.gradient.addEventListener('click', () => {
+        portfolioApp.html.setAttribute("colour","gradient");
         portfolioApp.html.classList = "gradient";
+        window.localStorage.setItem("colour", "gradient");
+        console.log(window.localStorage.getItem("colour"));
     })
 }
 
@@ -77,6 +87,28 @@ portfolioApp.init = () => {
     portfolioApp.blue = document.querySelector('.blueP');
     portfolioApp.green = document.querySelector('.greenP');
     portfolioApp.gradient = document.querySelector('.gradientP');
+
+    // Check for the current colour theme in local storage and apply on page load
+    portfolioApp.currentColour = window.localStorage.getItem("colour");
+    console.log(portfolioApp.currentColour);
+
+    if (window.localStorage.getItem("colour") === "blue") {
+        portfolioApp.html.classList = "blue";
+        console.log(window.localStorage.getItem("colour"));
+        localStorage.clear();
+    } else if (window.localStorage.getItem("colour") === "green") {
+        portfolioApp.html.classList = "green";
+        console.log(window.localStorage.getItem("colour"));
+        localStorage.clear();
+    } else if (window.localStorage.getItem("colour") === "gradient") {
+        portfolioApp.html.classList = "gradient";
+        console.log(window.localStorage.getItem("colour"));
+        localStorage.clear();
+    } else {
+        portfolioApp.html.classList = "yellow";
+        console.log(window.localStorage.getItem("colour"));
+        localStorage.clear();
+    }
 
     // Call functions
     portfolioApp.menuStart();
