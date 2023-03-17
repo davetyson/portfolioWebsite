@@ -228,11 +228,14 @@ html {
 }
 
 /* Variables */
-/* Media Query breakpoints */ /* Mixins */ /* Global & wrapper styles */
+/* Colours */
+/* Media Query breakpoints */
+/* Mixins */
+/* Global & wrapper styles */
 /* Global styles/Stripping auto-styling */
 body {
-  background-color: #F7D58D;
   overflow: hidden;
+  padding-bottom: 1000px;
 }
 
 h1, h2 {
@@ -351,6 +354,59 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+/* Colour Change box styles */
+.colourChanges {
+  border: 3px solid #000;
+  margin: 10px auto 0 auto;
+  padding: 0 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .colourChanges {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.colourChanges .colourBox {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1px solid #000;
+  margin: auto 2px;
+}
+@media only screen and (min-width: 768px) {
+  .colourChanges .colourBox {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: auto 5px;
+  }
+}
+
+/* Colour change class styles */
+.yellow {
+  background-color: #F7D58D;
+}
+
+.blue {
+  background-color: #B2E4FA;
+}
+
+.green {
+  background-color: #D4FACE;
+}
+
+.gradient {
+  background-color: #CBE6F1;
+  background: linear-gradient(219deg, rgba(125, 145, 154, 0.9) 0%, rgba(203, 230, 241, 0.9) 11%, rgba(203, 230, 241, 0.8) 26%, rgba(125, 145, 154, 0.8) 39%, rgba(125, 145, 154, 0.8) 57%, rgba(203, 230, 241, 0.9) 65%, rgba(203, 230, 241, 0.8) 77%, rgba(125, 145, 154, 0.9) 89%);
 }
 
 /* Content block styles */

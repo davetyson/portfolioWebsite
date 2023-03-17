@@ -24,13 +24,6 @@ portfolioApp.footerYear = () => {
     portfolioApp.footerP.innerHTML = `© Dave Tyson ${currentYear}`;
 }
 
-// Function to clear contact section on page load
-portfolioApp.clearContact = () => {
-    portfolioApp.name.value = '';
-    portfolioApp.email.value = '';
-    portfolioApp.textArea.value = '';
-}
-
 // Formspree code to clear form after submission
 portfolioApp.formspreeClear = () => {
     window.onbeforeunload = () => {
@@ -40,21 +33,59 @@ portfolioApp.formspreeClear = () => {
     }
 }
 
+// Function to change colour to yellow
+portfolioApp.changeYellow = () => {
+    portfolioApp.yellow.addEventListener('click', function() {
+        portfolioApp.body.classList = "yellow";
+    })
+}
+
+// Function to change colour to blue
+portfolioApp.changeBlue = () => {
+    portfolioApp.blue.addEventListener('click', () => {
+        portfolioApp.body.classList = "blue";
+    })
+}
+
+// Function to change colour to green
+portfolioApp.changeGreen = () => {
+    portfolioApp.green.addEventListener('click', () => {
+        portfolioApp.body.classList = "green";
+    })
+}
+
+// Function to change colour to gradient
+portfolioApp.changeGradient = () => {
+    portfolioApp.gradient.addEventListener('click', () => {
+        portfolioApp.body.classList = "gradient";
+    })
+}
+
 // Initialize variables and functions needed for script
 portfolioApp.init = () => {
+    // Select elements for menu script
     portfolioApp.menuButton = document.querySelector('.rotateText');
     portfolioApp.overallMenu = document.querySelector('.menu');
-    portfolioApp.footerP = document.querySelector('.footerP');
     portfolioApp.menu = document.querySelector('ul');
-    portfolioApp.projects = document.querySelector('projects');
-    portfolioApp.name = document.querySelector('#name');
-    portfolioApp.email = document.querySelector('#email');
-    portfolioApp.textArea = document.querySelector('textarea');
-    portfolioApp.form = document.querySelector('form');
+
+    // Select elements for footer script
+    portfolioApp.footerP = document.querySelector('.footerP');
+
+    // Select elements for colour change script
+    portfolioApp.body = document.querySelector('body');
+    portfolioApp.yellow = document.querySelector('.colourClickYellow');
+    portfolioApp.blue = document.querySelector('.colourClickBlue');
+    portfolioApp.green = document.querySelector('.colourClickGreen');
+    portfolioApp.gradient = document.querySelector('.colourClickGradient');
+
+    // Call functions
     portfolioApp.menuStart();
     portfolioApp.footerYear();
-    portfolioApp.clearContact();
     portfolioApp.formspreeClear();
+    portfolioApp.changeYellow();
+    portfolioApp.changeBlue();
+    portfolioApp.changeGreen();
+    portfolioApp.changeGradient();
 }
 
 // Initialize portfolioApp

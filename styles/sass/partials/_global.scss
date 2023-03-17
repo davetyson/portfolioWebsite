@@ -1,3 +1,4 @@
+@use "./variables" as *;
 @use "./mixins" as *;
 
 /* Global & wrapper styles */
@@ -5,8 +6,8 @@
 /* Global styles/Stripping auto-styling */
 
 body {
-    background-color: #F7D58D;
     overflow: hidden;
+    padding-bottom: 1000px;
 }
 
 h1, h2 {
@@ -100,6 +101,55 @@ img {
 
 .flexbox {
     display: flex;
+}
+
+/* Colour Change box styles */
+.colourChanges {
+    @include mq('tablet'){
+        flex-direction: row;
+    }
+    border: 3px solid #000;
+    margin: 10px auto 0 auto;
+    padding: 0 10px;
+    width: fit-content;
+    flex-direction: column;
+    .colourBox {
+        @include mq('tablet'){
+            width: 1.2rem;
+            height: 1.2rem;
+            margin: auto 5px;
+        }
+        width: 0.9rem;
+        height: 0.9rem;
+        border: 1px solid #000;
+        margin: auto 2px;
+    }
+}
+
+/* Colour change class styles */
+.yellow {
+    background-color: $yellow;
+}
+.blue {
+    background-color: $blue;
+}
+.green {
+    background-color: $green;
+}
+.gradient {
+    background-color: $gradient1Hex;
+    background: 
+        linear-gradient(
+            219deg,
+            $gradient2Heavy 0%,
+            $gradient1Heavy 11%,
+            $gradient1Light 26%,
+            $gradient2Light 39%,
+            $gradient2Light 57%,
+            $gradient1Heavy 65%,
+            $gradient1Light 77%, 
+            $gradient2Heavy 89%
+        );
 }
 
 /* Content block styles */
