@@ -124,9 +124,11 @@ img {
         width: 0.9rem;
         height: 0.9rem;
         border: 1px solid #000;
-        margin: auto 1px;
+        margin: auto;
         p {
             text-align: center;
+            padding: 0;
+            margin: 0;
         }
     }
 }
