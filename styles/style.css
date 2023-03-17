@@ -368,42 +368,41 @@ img {
 @media only screen and (min-width: 768px) {
   .colourChanges {
     padding: 0 10px;
-    margin: 10px auto 0 auto;
   }
 }
-.colourChanges .colourBox {
-  width: 0.9rem;
-  height: 0.9rem;
+.colourChanges p {
+  display: inline-block;
+  padding: 0 2px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2px 2px;
   border: 1px solid #000;
-  margin: auto 1px;
 }
 @media only screen and (min-width: 768px) {
-  .colourChanges .colourBox {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: auto 5px;
+  .colourChanges p {
+    padding: 0 5px;
+    margin: 2px 5px;
   }
-}
-.colourChanges .colourBox p {
-  text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 /* Colour change class styles */
-.yellow {
+.yellow,
+.yellowP {
   background-color: #F7D58D;
 }
 
-.blue {
+.blue,
+.blueP {
   background-color: #B2E4FA;
 }
 
-.green {
+.green,
+.greenP {
   background-color: #D4FACE;
 }
 
-.gradient {
+.gradient,
+.gradientP {
   background-color: #CBE6F1;
   background: linear-gradient(219deg, rgba(125, 145, 154, 0.9) 0%, rgba(203, 230, 241, 0.9) 11%, rgba(203, 230, 241, 0.8) 26%, rgba(125, 145, 154, 0.8) 39%, rgba(125, 145, 154, 0.8) 57%, rgba(203, 230, 241, 0.9) 65%, rgba(203, 230, 241, 0.8) 77%, rgba(125, 145, 154, 0.9) 89%);
 }

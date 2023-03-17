@@ -36,28 +36,28 @@ portfolioApp.formspreeClear = () => {
 // Function to change colour to yellow
 portfolioApp.changeYellow = () => {
     portfolioApp.yellow.addEventListener('click', function() {
-        portfolioApp.body.classList = "yellow";
+        portfolioApp.html.classList = "yellow";
     })
 }
 
 // Function to change colour to blue
 portfolioApp.changeBlue = () => {
     portfolioApp.blue.addEventListener('click', () => {
-        portfolioApp.body.classList = "blue";
+        portfolioApp.html.classList = "blue";
     })
 }
 
 // Function to change colour to green
 portfolioApp.changeGreen = () => {
     portfolioApp.green.addEventListener('click', () => {
-        portfolioApp.body.classList = "green";
+        portfolioApp.html.classList = "green";
     })
 }
 
 // Function to change colour to gradient
 portfolioApp.changeGradient = () => {
     portfolioApp.gradient.addEventListener('click', () => {
-        portfolioApp.body.classList = "gradient";
+        portfolioApp.html.classList = "gradient";
     })
 }
 
@@ -72,11 +72,11 @@ portfolioApp.init = () => {
     portfolioApp.footerP = document.querySelector('.footerP');
 
     // Select elements for colour change script
-    portfolioApp.body = document.querySelector('body');
-    portfolioApp.yellow = document.querySelector('.colourClickYellow');
-    portfolioApp.blue = document.querySelector('.colourClickBlue');
-    portfolioApp.green = document.querySelector('.colourClickGreen');
-    portfolioApp.gradient = document.querySelector('.colourClickGradient');
+    portfolioApp.html = document.querySelector('html');
+    portfolioApp.yellow = document.querySelector('.yellowP');
+    portfolioApp.blue = document.querySelector('.blueP');
+    portfolioApp.green = document.querySelector('.greenP');
+    portfolioApp.gradient = document.querySelector('.gradientP');
 
     // Call functions
     portfolioApp.menuStart();
