@@ -360,7 +360,7 @@ img {
 .colourChanges {
   border: 3px solid #000;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -368,13 +368,14 @@ img {
 @media only screen and (min-width: 768px) {
   .colourChanges {
     margin: 10px auto 0 auto;
+    padding: 0 10px;
   }
 }
 .colourChanges .colourBox {
   width: 0.9rem;
   height: 0.9rem;
   border: 1px solid #000;
-  margin: auto 2px;
+  margin: auto 1px;
 }
 @media only screen and (min-width: 768px) {
   .colourChanges .colourBox {
@@ -382,6 +383,9 @@ img {
     height: 1.2rem;
     margin: auto 5px;
   }
+}
+.colourChanges .colourBox p {
+  text-align: center;
 }
 
 /* Colour change class styles */
