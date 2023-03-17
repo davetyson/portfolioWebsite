@@ -105,11 +105,13 @@ img {
 
 /* Colour Change box styles */
 .colourChanges {
-    // @include mq('tablet'){
-    //     flex-direction: row;
-    // }
+    @include mq('tablet'){
+        // flex-direction: row;
+        margin: 10px auto 0 auto;
+
+    }
     border: 3px solid #000;
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
     padding: 0 10px;
     width: fit-content;
     // flex-direction: column;

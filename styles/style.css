@@ -359,11 +359,16 @@ img {
 /* Colour Change box styles */
 .colourChanges {
   border: 3px solid #000;
-  margin: 10px auto 0 auto;
+  margin: 0 auto;
   padding: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media only screen and (min-width: 768px) {
+  .colourChanges {
+    margin: 10px auto 0 auto;
+  }
 }
 .colourChanges .colourBox {
   width: 0.9rem;
