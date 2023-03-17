@@ -61,18 +61,7 @@ a {
 
 button {
     font-family: 'Puritan', sans-serif;
-}
-
-.menu {
-    button {
-        font-weight: 700;
-        @include mq('tablet'){
-            // font-size: 1.5rem;
-            font-size: 1.8rem;
-        }
-        // font-size: 1.125rem;
-        font-size: 1.35rem;
-    }
+    font-weight: 700;
 }
 
 .fa {

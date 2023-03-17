@@ -41,9 +41,12 @@ h1 {
     }
     .rotateText {
         writing-mode: vertical-rl;
-        transform: rotate(90deg);
+        transform: rotate(180deg);
         padding-bottom: 5px;
         text-align: start;
+        // position: absolute;
+        // top: 20px;
+        // right: 5vw;
     }
     ul {
         @include mq('tablet'){
@@ -51,6 +54,7 @@ h1 {
         }
         opacity: 0%;
         left: 9%;
+        top: 10%;
         padding-top: -20px;
         transition: 0.3s;
         position: absolute;
