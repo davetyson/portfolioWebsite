@@ -1,10 +1,29 @@
+/* Import mixins */
+@use "./mixins" as *;
+
 /* Animation styles */
 
-/* Menu slide in & out */
+/* Menu slide out */
 @keyframes menuSlide {
     0% {
         transform: translateX(-8%);
         opacity: 0%;
+    }
+    20% {
+        transform: translateX(-6.4%);
+        opacity: 20%;
+    }
+    40% {
+        transform: translateX(-4.8%);
+        opacity: 40%;
+    }
+    60% {
+        transform: translateX(-3.2%);
+        opacity: 60%;
+    }
+    80% {
+        transform: translateX(-1.6%);
+        opacity: 80%;
     }
     100% {
         transform: translateX(0%);
@@ -12,10 +31,27 @@
     }
 }
 
+/* Menu slide back */
 @keyframes menuSlideBack {
     0% {
         transform: translateX(0%);
         opacity: 100%;
+    }
+    20% {
+        transform: translateX(-1.6%);
+        opacity: 80%;
+    }
+    40% {
+        transform: translateX(-3.2%);
+        opacity: 60%;
+    }
+    60% {
+        transform: translateX(-4.8%);
+        opacity: 40%;
+    }
+    80% {
+        transform: translateX(-6.4%);
+        opacity: 20%;
     }
     100% {
         transform: translateX(-8%);
@@ -29,6 +65,22 @@
     0% {
         transform: translateY(20%);
         opacity: 0%;
+    }
+    20% {
+        transform: translateY(16%);
+        opacity: 20%;
+    }
+    40% {
+        transform: translateY(12%);
+        opacity: 40%;
+    }
+    60% {
+        transform: translateY(8%);
+        opacity: 60%;
+    }
+    80% {
+        transform: translateY(4%);
+        opacity: 80%;
     }
     100% {
         transform: translateY(0%);
@@ -74,9 +126,17 @@
 }
 
 .imageReveal {
-    animation: imageReveal 0.2s linear 1;
+    @include mq('tablet'){
+        animation: imageReveal 0.2s linear 1;
+
+    }
+    animation: none;
 }
 
 .imageExit {
-    animation: imageOut 0.2s linear 1;
+    @include mq('tablet'){
+        animation: imageExit 0.2s linear 1;
+
+    }
+    animation: none;
 }

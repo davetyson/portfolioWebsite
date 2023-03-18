@@ -1,11 +1,10 @@
+/* Import mixins */
 @use "./mixins" as *;
 
 /* Projects styles */
 
 /* Main project styles */
 .projects {
-    overflow: auto;
-    scrollbar-color: red transparent;
     text-align: end;
     height: 100%;
     flex-direction: column;
@@ -25,44 +24,43 @@
             width: fit-content;
             margin-left: auto;
             padding-bottom: 5px;
-            p {
-                padding: 0 10px;
-                text-align: center;
-            }
             a {
                 margin: 0;
                 text-align: center;
             }
+            p {
+                padding: 0 10px;
+                text-align: center;
+            }
         }
     }
-    .extraMargin {
+    .extraProjectsMargin {
         margin-bottom: 20px;
     }
 }
 
-/* Image styles */
-.imageOverlay {
-    @include mq('tablet'){
-        opacity: 0%;
-        display: none;
-    }
-    opacity: 100%;
-    display: block;
+/* Image box styles */
+.imageBox,
+.imageBoxReveal {
     width: auto;
     margin: 10px 0 0 60px;
     height: auto;
     position: relative;
     z-index: -10;
     border: 1px solid #000;
+
+}
+.imageBox {
+    @include mq('tablet'){
+        display: none;
+        opacity: 0%;
+    }
+    transition: 0.3s;
+    display: block;
+    opacity: 100%;
 }
 
-.imageOverlayReveal {
-    width: auto;
-    margin: 10px 0 0 60px;
-    height: auto;
-    position: relative;
-    z-index: -10;
-    border: 1px solid #000;
+.imageBoxReveal {
     transition: 0.3s;
     display: block;
     opacity: 100%;

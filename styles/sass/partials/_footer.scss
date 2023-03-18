@@ -1,3 +1,4 @@
+/* Import mixins */
 @use "./mixins" as *;
 
 /* Footer styles */
@@ -19,22 +20,19 @@ footer {
     top: 60vh;
     right: 10%;
     z-index: -10;
-
     .rotateTextFooter {
         writing-mode: vertical-rl;
         padding-bottom: 5px;
         text-align: end;
         z-index: 100;
     }
-
-    .redBar2 {
+    .redBarFooter {
         @include mq('tablet'){
             width: 40%;
         }
         height: 20px;
         width: 80%;
         background-color: red;
-        justify-content: end;
     }
 }
 

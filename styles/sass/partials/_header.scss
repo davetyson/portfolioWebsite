@@ -1,3 +1,4 @@
+/* Import mixins */
 @use './mixins' as *;
 
 /* Header styles */
@@ -21,15 +22,15 @@ h1 {
 }
 
 /* Red bar */
-.redBar {
+.redBarHeader {
     @include mq('tablet'){
         width: 100%;
         min-width: 475px;
 
     }
     height: 20px;
-    min-width: 0;
     width: 80vw;
+    min-width: 0;
     background-color: red;
 }
 
@@ -43,7 +44,6 @@ h1 {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         padding-bottom: 5px;
-        text-align: start;
     }
     ul {
         @include mq('tablet'){

@@ -1,7 +1,7 @@
-@use './variables' as *;
+/* Import variables */
+@use "./variables" as *;
 
-/* Mixins */
-
+/* Media query mixin */
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);

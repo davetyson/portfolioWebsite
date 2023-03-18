@@ -1,6 +1,9 @@
 // Declare portfolioApp
 const portfolioApp = {};
 
+// Declare all functions
+
+// Menu Animations
 // Menu slide-back (return) function
 portfolioApp.menuReturn = () => {
     portfolioApp.overallMenu.addEventListener('mouseleave', function(){
@@ -8,7 +11,6 @@ portfolioApp.menuReturn = () => {
         portfolioApp.menu.classList='menuSlideBack flexbox';
     });
 }
-
 //  Menu slide-forward (start) function
 portfolioApp.menuStart = () => {
         portfolioApp.menuButton.addEventListener('mouseover', function(){
@@ -18,7 +20,7 @@ portfolioApp.menuStart = () => {
     });
 }   
 
-// Function to grab current year for footer copyright
+// Footer Year function
 portfolioApp.footerYear = () => {
     let currentYear = new Date().getFullYear();
     portfolioApp.footerP.innerHTML = `© Dave Tyson ${currentYear}`;
@@ -37,118 +39,103 @@ portfolioApp.formspreeClear = () => {
 // Project 1
 portfolioApp.showProjectImage1 = () => {
     portfolioApp.project1Header.addEventListener('mouseover', () => {
-        portfolioApp.image1.classList='imageOverlayReveal imageReveal image1';
+        portfolioApp.image1.classList='imageBoxReveal imageReveal image1';
     })
 }
 portfolioApp.hideProjectImage1 = () => {
     portfolioApp.project1Container.addEventListener('mouseleave', () => {
-        portfolioApp.image1.classList='imageOverlay imageExit image1';
+        portfolioApp.image1.classList='imageBox imageExit image1';
     })
 }
-
 //Project 2
 portfolioApp.showProjectImage2 = () => {
     portfolioApp.project2Header.addEventListener('mouseover', () => {
-        portfolioApp.image2.classList='imageOverlayReveal imageReveal image2';
+        portfolioApp.image2.classList='imageBoxReveal imageReveal image2';
     })
 }
 portfolioApp.hideProjectImage2 = () => {
     portfolioApp.project2Container.addEventListener('mouseleave', () => {
-        portfolioApp.image2.classList='imageOverlay imageExit image2';
+        portfolioApp.image2.classList='imageBox imageExit image2';
 
     })
 }
-
 // Project 3
 portfolioApp.showProjectImage3 = () => {
     portfolioApp.project3Header.addEventListener('mouseover', () => {
-        portfolioApp.image3.classList='imageOverlayReveal imageReveal image3';
+        portfolioApp.image3.classList='imageBoxReveal imageReveal image3';
     })
 }
 portfolioApp.hideProjectImage3 = () => {
     portfolioApp.project3Container.addEventListener('mouseleave', () => {
-        portfolioApp.image3.classList='imageOverlay imageExit image3';
+        portfolioApp.image3.classList='imageBox imageExit image3';
     })
 }
-
 // Project 4
 portfolioApp.showProjectImage4 = () => {
     portfolioApp.project4Header.addEventListener('mouseover', () => {
-        portfolioApp.image4.classList='imageOverlayReveal imageReveal image4';
+        portfolioApp.image4.classList='imageBoxReveal imageReveal image4';
     })
 }
 portfolioApp.hideProjectImage4 = () => {
     portfolioApp.project4Container.addEventListener('mouseleave', () => {
-        portfolioApp.image4.classList='imageOverlay imageExit image4';
+        portfolioApp.image4.classList='imageBox imageExit image4';
     })
 }
-
 // Project 5
 portfolioApp.showProjectImage5 = () => {
     portfolioApp.project5Header.addEventListener('mouseover', () => {
-        portfolioApp.image5.classList='imageOverlayReveal imageReveal image5';
+        portfolioApp.image5.classList='imageBoxReveal imageReveal image5';
     })
 }
 portfolioApp.hideProjectImage5 = () => {
     portfolioApp.project5Container.addEventListener('mouseleave', () => {
-        portfolioApp.image5.classList='imageOverlay imageExit image5';
+        portfolioApp.image5.classList='imageBox imageExit image5';
     })
 }
 
-// Function to change colour to yellow
+// Functions to change the page colour when user selects a different one
+// Function to change page colour to yellow
 portfolioApp.changeYellow = () => {
         portfolioApp.yellow.addEventListener('click', function() {
         portfolioApp.html.classList = "yellow";
         localStorage.setItem("colour", "yellow");
     })
 }
-
-// Function to change colour to blue
+// Function to change page colour to blue
 portfolioApp.changeBlue = () => {
     portfolioApp.blue.addEventListener('click', () => {
         portfolioApp.html.classList = "blue";
         localStorage.setItem("colour", "blue");
     })
 }
-
-// Function to change colour to green
+// Function to change page colour to green
 portfolioApp.changeGreen = () => {
     portfolioApp.green.addEventListener('click', () => {
         portfolioApp.html.classList = "green";
         localStorage.setItem("colour", "green");
     })
 }
-
-// Function to change colour to gradient
+// Function to change page colour to gradient
 portfolioApp.changeGradient = () => {
     portfolioApp.gradient.addEventListener('click', () => {
         portfolioApp.html.classList = "gradient";
         localStorage.setItem("colour", "gradient");
     })
 }
+// End of function declarations
 
-// Initialize variables and functions needed for script
+// Initialize portfolioApp
 portfolioApp.init = () => {
 
-    // Select elements for menu script
+    // Select elements for menu functions
     portfolioApp.menuButton = document.querySelector('.rotateText');
     portfolioApp.overallMenu = document.querySelector('.menu');
     portfolioApp.menu = document.querySelector('ul');
 
-    // Select elements for footer script
+    // Select elements for footer functions
     portfolioApp.footerP = document.querySelector('.footerP');
 
-    // // Select elements for project overlays
-    // portfolioApp.project1 = document.querySelector('.project1');
-    // portfolioApp.project2 = document.querySelector('.project2');
-    // portfolioApp.project3 = document.querySelector('.project3');
-    // portfolioApp.project4 = document.querySelector('.project4');
-    // portfolioApp.project5 = document.querySelector('.project5');
-    // portfolioApp.smallInfoLinks = document.querySelector('.smallInfoLinks');
-    // portfolioApp.project1p = document.querySelectorAll('.project1P');
-    // portfolioApp.imageOverlay = document.querySelector('.imageOverlay');
-    // portfolioApp.displayedImage = document.createElement('img');
-
+    // Select elements for image box functions
     portfolioApp.project1Header = document.querySelector('.project1')
     portfolioApp.project2Header = document.querySelector('.project2')
     portfolioApp.project3Header = document.querySelector('.project3')
@@ -193,7 +180,7 @@ portfolioApp.init = () => {
         localStorage.setItem("colour", "yellow");
     }
 
-    // Call functions
+    // Call all functions
     portfolioApp.menuStart();
     portfolioApp.footerYear();
     portfolioApp.formspreeClear();
@@ -213,5 +200,5 @@ portfolioApp.init = () => {
     portfolioApp.hideProjectImage5();
 }
 
-// Initialize portfolioApp
+// Call portfolioApp initialization
 portfolioApp.init();

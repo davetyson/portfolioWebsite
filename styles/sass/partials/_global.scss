@@ -1,9 +1,10 @@
+/* Import variables and mixins */
 @use "./variables" as *;
 @use "./mixins" as *;
 
 /* Global & wrapper styles */
 
-/* Global styles/Stripping auto-styling */
+/* Global styles and stripping auto-styling */
 
 body {
     overflow: hidden;
@@ -87,7 +88,6 @@ img {
     }
     overflow: auto;
     scrollbar-width: none;
-    // scrollbar-color: red transparent;
     margin: 0 auto;
     margin-top: 5vh;
     width: 90%;
@@ -104,12 +104,50 @@ img {
     display: flex;
 }
 
-/* Colour Change box styles */
-.colourChanges {
+/* Content block styles */
+.mainContentBlock {
+    @include mq('tablet') {
+        width: 45%;
+        max-height: 90%;
+        margin-top: 2vh;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+    overflow: auto;
+    scrollbar-width: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    max-height: 70%;
+    margin-top: auto;
+    margin-bottom: 25%;
+    margin-left: 0;
+    a {
+        text-align: end;
+        height: fit-content;
+        margin-top: 70px;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+
+.projects,
+.infoContainer,
+.missionStatement {
+    @include mq('tablet') {
+        margin-right: -15px;
+        padding-right: 64px;
+    }
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+/* Colour swap box styles */
+.colourSwapBox {
     @include mq('tablet'){
         padding: 0 10px;
     }
-    // border: 3px solid #000;
     margin: 2px auto 0 auto;
     padding: 0;
     width: fit-content;
@@ -158,33 +196,13 @@ img {
         );
 }
 
-/* Content block styles */
-.mainContentBlock {
-    @include mq('tablet') {
-        width: 45%;
-        margin-top: 2vh;
-        padding-bottom: 0;
-        max-height: 90%;
-        margin-bottom: 0;
-        margin-left: 10%;
-    }
+/* Scrollbar adjustments */
+.missionStatement,
+.projects,
+.infoContainer,
+.contactForm {
     overflow: auto;
-    scrollbar-width: none;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    max-height: 70%;
-    width: 100%;
-    margin-left: 0;
-    margin-top: auto;
-    margin-bottom: 25%;
-    a {
-        text-align: end;
-        height: fit-content;
-        margin-top: 70px;
-        margin-right: 10px;
-        width: 100%;
-    }
+    scrollbar-color: red transparent;
 }
 
 ::-webkit-scrollbar {
@@ -197,15 +215,4 @@ img {
 
 .mainContentBlock::-webkit-scrollbar {
     display: none;
-}
-
-.projects,
-.infoContainer,
-.missionStatement {
-    @include mq('tablet') {
-        margin-right: -15px;
-        padding-right: 64px;
-    }
-    margin-right: 20px;
-    padding-right: 10px;
 }
