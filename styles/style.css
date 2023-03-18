@@ -451,7 +451,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: #ff0000;
 }
 
 .mainContentBlock::-webkit-scrollbar {
@@ -926,14 +926,6 @@ footer .redBar2 {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
-}
-
-.contactForm::-webkit-scrollbar {
-  background: transparent;
-}
-
-.contactForm::-webkit-scrollbar-thumb {
-  background: red;
 }
 
 ::-webkit-input-placeholder {
