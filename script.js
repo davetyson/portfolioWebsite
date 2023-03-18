@@ -36,7 +36,7 @@ portfolioApp.formspreeClear = () => {
 // Function to change colour to yellow
 portfolioApp.changeYellow = () => {
         portfolioApp.yellow.addEventListener('click', function() {
-        portfolioApp.html.setAttribute("colour","yellow");
+        // portfolioApp.html.setAttribute("colour","yellow");
         portfolioApp.html.classList = "yellow";
         window.localStorage.setItem("colour", "yellow");
         // portfolioApp.currentColour = "colour=yellow";
@@ -46,7 +46,7 @@ portfolioApp.changeYellow = () => {
 // Function to change colour to blue
 portfolioApp.changeBlue = () => {
     portfolioApp.blue.addEventListener('click', () => {
-        portfolioApp.html.setAttribute("colour","blue");
+        // portfolioApp.html.setAttribute("colour","blue");
         portfolioApp.html.classList = "blue";
         window.localStorage.setItem("colour", "blue");
         // portfolioApp.currentColour = "colour=blue";
@@ -56,7 +56,7 @@ portfolioApp.changeBlue = () => {
 // Function to change colour to green
 portfolioApp.changeGreen = () => {
     portfolioApp.green.addEventListener('click', () => {
-        portfolioApp.html.setAttribute("colour","green");
+        // portfolioApp.html.setAttribute("colour","green");
         portfolioApp.html.classList = "green";
         window.localStorage.setItem("colour", "green");
         // portfolioApp.currentColour = "colour=green";
@@ -68,7 +68,7 @@ portfolioApp.changeGreen = () => {
 portfolioApp.changeGradient = () => {
     console.log(localStorage);
     portfolioApp.gradient.addEventListener('click', () => {
-        portfolioApp.html.setAttribute("colour","gradient");
+        // portfolioApp.html.setAttribute("colour","gradient");
         portfolioApp.html.classList = "gradient";
         window.localStorage.setItem("colour", "gradient");
         // console.log(window.localStorage.getItem("colour"));
@@ -101,20 +101,24 @@ portfolioApp.init = () => {
 
     if (window.localStorage.getItem("colour") === "blue") {
         portfolioApp.html.classList = "blue";
-        console.log(window.localStorage.getItem("colour"));
+        // console.log(window.localStorage.getItem("colour"));
         localStorage.clear();
+        localStorage.setItem("colour", "blue");
     } else if (window.localStorage.getItem("colour") === "green") {
         portfolioApp.html.classList = "green";
-        console.log(window.localStorage.getItem("colour"));
+        // console.log(window.localStorage.getItem("colour"));
         localStorage.clear();
+        localStorage.setItem("colour", "green");
     } else if (window.localStorage.getItem("colour") === "gradient") {
         portfolioApp.html.classList = "gradient";
-        console.log(window.localStorage.getItem("colour"));
+        // console.log(window.localStorage.getItem("colour"));
         localStorage.clear();
+        localStorage.setItem("colour", "gradient");
     } else {
         portfolioApp.html.classList = "yellow";
-        console.log(window.localStorage.getItem("colour"));
+        // console.log(window.localStorage.getItem("colour"));
         localStorage.clear();
+        localStorage.setItem("colour", "yellow");
     }
 
     // COOKIE EXPERIMENTS
