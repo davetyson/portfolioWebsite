@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 /* Animation styles */
 
 /* Menu slide in & out */
@@ -38,13 +40,22 @@
 
 /* Animation classes */
 .runMenuAnimation {
-    animation: menuSlide 0.3s linear 1;
+    @include mq('tablet'){
+        animation: menuSlide 0.3s linear 1;
+    }
+    animation: none;
 }
 
 .menuSlideBack {
-    animation: menuSlideBack 0.3s linear 1;
+    @include mq('tablet'){
+        animation: menuSlideBack 0.3s linear 1;
+    }
+    animation: none;
 }
 
 .mainSlideUp {
-    animation: mainSlideUp 0.6s linear 1;
+    @include mq('tablet'){
+        animation: mainSlideUp 0.6s linear 1;
+    }
+    animation: none;
 }

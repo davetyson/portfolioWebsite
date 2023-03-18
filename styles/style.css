@@ -654,18 +654,36 @@ button {
 }
 /* Animation classes */
 .runMenuAnimation {
-  -webkit-animation: menuSlide 0.3s linear 1;
-          animation: menuSlide 0.3s linear 1;
+  -webkit-animation: none;
+          animation: none;
+}
+@media only screen and (min-width: 768px) {
+  .runMenuAnimation {
+    -webkit-animation: menuSlide 0.3s linear 1;
+            animation: menuSlide 0.3s linear 1;
+  }
 }
 
 .menuSlideBack {
-  -webkit-animation: menuSlideBack 0.3s linear 1;
-          animation: menuSlideBack 0.3s linear 1;
+  -webkit-animation: none;
+          animation: none;
+}
+@media only screen and (min-width: 768px) {
+  .menuSlideBack {
+    -webkit-animation: menuSlideBack 0.3s linear 1;
+            animation: menuSlideBack 0.3s linear 1;
+  }
 }
 
 .mainSlideUp {
-  -webkit-animation: mainSlideUp 0.6s linear 1;
-          animation: mainSlideUp 0.6s linear 1;
+  -webkit-animation: none;
+          animation: none;
+}
+@media only screen and (min-width: 768px) {
+  .mainSlideUp {
+    -webkit-animation: mainSlideUp 0.6s linear 1;
+            animation: mainSlideUp 0.6s linear 1;
+  }
 }
 
 /* Header styles */
@@ -726,13 +744,15 @@ h1 {
   left: 9%;
   top: 10%;
   padding-top: -20px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0;
+  transition: 0;
   position: absolute;
 }
 @media only screen and (min-width: 768px) {
   .menu ul {
     left: 11%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
