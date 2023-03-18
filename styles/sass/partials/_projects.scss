@@ -40,7 +40,7 @@
     }
 }
 
-// .projects::-webkit-scrollbar {
-//     display: none;
-// }
+.projects::-webkit-scrollbar {
+    scrollbar-color: red transparent;
+}
 

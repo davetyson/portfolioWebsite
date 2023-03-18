@@ -824,6 +824,10 @@ footer .redBar2 {
   margin-bottom: 20px;
 }
 
+.projects::-webkit-scrollbar {
+  scrollbar-color: red transparent;
+}
+
 /* Info styles */
 .infoContainer {
   overflow: auto;
@@ -857,6 +861,10 @@ footer .redBar2 {
 }
 .infoContainer .socialBox a {
   margin: 0 10px;
+}
+
+.infoContainer::-webkit-scrollbar {
+  scrollbar-color: red transparent;
 }
 
 /* Contact styles */

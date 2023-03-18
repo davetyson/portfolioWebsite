@@ -30,6 +30,6 @@
     }
 }
 
-// .infoContainer::-webkit-scrollbar {
-//     display: none;
-// }
+.infoContainer::-webkit-scrollbar {
+    scrollbar-color: red transparent;
+}
