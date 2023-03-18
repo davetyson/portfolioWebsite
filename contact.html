@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dave Tyson - Web Developer</title>
+    <title>Dave Tyson - Web Developer - Contact</title>
     <link rel="icon" type="image/x-icon" href="./assets/globe.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,22 +34,36 @@
             <div class="menu flexbox">
                 <h2 tabindex="0" class="rotateText">Menu</h2>
                 <ul>
-                    <li>&#8226<span class="sr-only">Home</span></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="./info.html">Info</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li>&#8226<span class="sr-only">Contact</span></li>
                 </ul>
             </div>
-        </header>   
-        
-        <!-- Main content block - Mission statement -->
+        </header>
+
+        <!-- Main content block - Contact -->
         <main class="mainContentBlock flexbox">
-            <p class="mainSlideUp missionStatement">Born and raised in the snows of Canada, I believe web design should be a continual rediscovery. I explore the next exciting web experiences and bring innovative products and ideas to life through responsive and accessible design.</p>
+            <div class="mainSlideUp contactForm">
+                <form method="post" name="emailContactForm" action="https://formspree.io/f/mbjekebq">
+                    <fieldset>
+                        <div class="formInputs flexbox">
+                            <label class="sr-only" for="name">Name</label>
+                            <input id="name" type="name" name="name" placeholder="Name">
+                            <label class="sr-only" for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Email">
+                        </div>
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea id="message" type="message" name="message" placeholder="Message" autocomplete="off"></textarea>
+                    </fieldset>
+                    <button type="submit" value="Send Form">Send</button>
+                </form>
+            </div>
         </main>
 
         <!-- Footer -->
         <footer class="flexbox">   
-            <h2 class="rotateTextFooter">Home</h2>
+            <h2 class="rotateTextFooter">Contact</h2>
             <div class="redBarFooter"></div>
             <p class="footerP"></p>
         </footer>

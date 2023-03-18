@@ -1,0 +1,97 @@
+/* Import mixins */
+@use "./mixins" as *;
+
+/* Typography styles */
+
+html {
+    font-size: 125%;
+    font-family: 'Puritan', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    @include mq('tablet'){
+        font-size: 1.8rem;
+    }
+    font-size: 1.35rem;
+}
+
+h3 {
+    @include mq('tablet'){
+        font-size: 2.1rem;
+    }
+    font-size: 0.9rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+p {
+    @include mq('tablet') {
+        font-size: 1.2rem;
+    }
+        font-size: 0.9rem;
+}
+
+a {
+    @include mq('tablet'){
+        font-size: 1.2rem;
+    }
+    font-size: 0.9rem;
+}
+
+button {
+    font-family: 'Puritan', sans-serif;
+    font-weight: 700;
+}
+
+.fa {
+    @include mq('tablet'){
+        font-size: 1.8rem;
+    }
+    font-size: 1.35rem;
+}
+
+.fontLight {
+    @include mq('tablet'){
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+    }
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.projects {
+
+    h2 {
+        @include mq('tablet'){
+            font-size: 1.32rem;
+        }
+        font-size: 1.2rem;
+
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    a,
+    p {
+        @include mq('tablet'){
+            font-size: 0.96rem;
+        }
+        font-size: 0.9rem;
+    }
+}
+
+.infoContainer {
+    p {
+        @include mq('tablet'){
+            font-size: 0.8rem;
+        }
+        font-size: 0.6rem;
+    }
+}

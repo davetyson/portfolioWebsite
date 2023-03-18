@@ -1,0 +1,27 @@
+/* Import mixins */
+@use "./mixins" as *;
+
+/* Info styles */
+
+.infoContainer {
+    @include mq('tablet'){
+        padding-bottom: 10px;
+    }
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    padding-bottom: 20px;
+    a,
+    p {
+        margin-top: 10px;
+    }
+    p {
+        margin-right: 10px;
+    }
+    .socialBox {
+        width: fit-content;
+        a {
+        margin: 0 10px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* Variables */
+
+/* Colours */
+$yellow:#F7D58D;
+$blue: #B2E4FA;
+$green: #D4FACE;
+$gradient1Hex: #CBE6F1;
+$gradient1Light: rgba(203,230,241,0.8);
+$gradient1Heavy: rgba(203,230,241,0.9);
+$gradient2Light: rgba(125,145,154,0.8);
+$gradient2Heavy: rgba(125,145,154,0.9);
+
+/* Media Query breakpoints */
+$breakpoints: (
+    'phone':        400px,
+    'phone-wide':   480px,
+    'phablet':      560px,
+    'tablet-small': 640px,
+    'tablet':       768px,
+    'tablet-wide':  1024px,
+    'desktop':      1248px,
+    'desktop-wide': 1440px,
+    'max-width':   1655px
+);

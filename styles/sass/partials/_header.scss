@@ -1,0 +1,59 @@
+/* Import mixins */
+@use './mixins' as *;
+
+/* Header styles */
+
+/* Header block formatting */
+h1 {
+    white-space: nowrap;
+}
+
+.headerBlock {
+    @include mq('tablet'){
+        width: 45%;
+    }
+    width: 100%;
+    .topH3 {
+        @include mq('tablet'){
+            padding-top: 25px;
+        }
+        padding-top: 31px;
+    }
+}
+
+/* Red bar */
+.redBarHeader {
+    @include mq('tablet'){
+        width: 100%;
+        min-width: 475px;
+
+    }
+    height: 20px;
+    width: 80vw;
+    min-width: 0;
+    background-color: red;
+}
+
+/* Menu styles */
+.menu {
+    position: relative;
+    h2 {
+        text-align: end;
+    }
+    .rotateText {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding-bottom: 5px;
+    }
+    ul {
+        @include mq('tablet'){
+            left: 11%;
+        }
+        opacity: 0%;
+        left: 9%;
+        top: 10%;
+        padding-top: -20px;
+        transition: 0.3s;
+        position: absolute;
+    }
+}

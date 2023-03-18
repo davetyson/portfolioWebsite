@@ -1,0 +1,218 @@
+/* Import variables and mixins */
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/* Global & wrapper styles */
+
+/* Global styles and stripping auto-styling */
+
+body {
+    overflow: hidden;
+    padding-bottom: 1000px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h3 {
+    @include mq('tablet'){
+        margin-top: 15px;
+    }
+    margin: 5px;
+    margin-top: 0;
+}
+
+h5 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+p {
+    @include mq('tablet') {
+        flex-direction: row;    
+        flex-wrap: wrap;
+    }
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+  
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: red;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 10px 0 10px;
+}
+
+figure {
+    @include mq('tablet'){
+        height: 284px;
+        width: 284px;
+    }
+    margin: 0;
+    height: 142px;
+    width: 142px;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+/* Wrapper & flexbox styles */
+.wrapper {
+    @include mq('tablet') {
+        flex-direction: row;    
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+    overflow: auto;
+    scrollbar-width: none;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 90%;
+    max-width: 1500px;
+    height: 75vh;
+    border: 3px solid #000;
+    position: relative;
+    padding: 5%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* Content block styles */
+.mainContentBlock {
+    @include mq('tablet') {
+        width: 45%;
+        max-height: 90%;
+        margin-top: 2vh;
+        margin-bottom: 0;
+        margin-left: 10%;
+    }
+    overflow: auto;
+    scrollbar-width: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    max-height: 70%;
+    margin-top: auto;
+    margin-bottom: 25%;
+    margin-left: 0;
+    a {
+        text-align: end;
+        height: fit-content;
+        margin-top: 70px;
+        margin-right: 10px;
+        width: 100%;
+    }
+}
+
+.projects,
+.infoContainer,
+.missionStatement {
+    @include mq('tablet') {
+        margin-right: -15px;
+        padding-right: 64px;
+    }
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+/* Colour swap box styles */
+.colourSwapBox {
+    @include mq('tablet'){
+        padding: 0 10px;
+    }
+    margin: 2px auto 0 auto;
+    padding: 0;
+    width: fit-content;
+    p {
+        @include mq('tablet'){
+            padding: 0 5px;
+            margin: 2px 5px;
+
+
+        }
+        display: inline-block;
+        padding: 0 2px;
+        justify-content: space-around;
+        margin: 2px 2px;
+        border: 1px solid #000;
+    }
+}
+
+/* Colour change class styles */
+.yellow,
+.yellowP {
+    background-color: $yellow;
+}
+.blue,
+.blueP {
+    background-color: $blue;
+}
+.green,
+.greenP {
+    background-color: $green;
+}
+.gradient,
+.gradientP {
+    background-color: $gradient1Hex;
+    background: 
+        linear-gradient(
+            219deg,
+            $gradient2Heavy 0%,
+            $gradient1Heavy 11%,
+            $gradient1Light 26%,
+            $gradient2Light 39%,
+            $gradient2Light 57%,
+            $gradient1Heavy 65%,
+            $gradient1Light 77%, 
+            $gradient2Heavy 89%
+        );
+}
+
+/* Scrollbar adjustments */
+.missionStatement,
+.projects,
+.infoContainer,
+.contactForm {
+    overflow: auto;
+    scrollbar-color: red transparent;
+}
+
+::-webkit-scrollbar {
+    background: transparent;    
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000    
+}
+
+.mainContentBlock::-webkit-scrollbar {
+    display: none;
+}

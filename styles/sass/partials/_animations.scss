@@ -1,0 +1,94 @@
+/* Import mixins */
+@use "./mixins" as *;
+
+/* Animation styles */
+
+/* Menu slide out */
+@keyframes menuSlide {
+    0% {
+        transform: translateX(-8%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+/* Menu slide back */
+@keyframes menuSlideBack {
+    0% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(-8%);
+        opacity: 0%;
+
+    }
+}
+
+/* Text pop up in main content block */
+@keyframes mainSlideUp {
+    0% {
+        transform: translateY(20%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+/* Image reveal */
+@keyframes imageReveal {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+/* Image exit */
+@keyframes imageExit {
+    0% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(-20%);
+        opacity: 0%;
+    }
+}
+
+/* Animation classes */
+.runMenuAnimation {
+    animation: menuSlide 0.3s linear 1;
+}
+
+.menuSlideBack {
+    animation: menuSlideBack 0.3s linear 1;
+}
+
+.mainSlideUp {
+    animation: mainSlideUp 0.6s linear 1;
+}
+
+.imageReveal {
+    @include mq('tablet'){
+        animation: imageReveal 0.2s linear 1;
+
+    }
+    animation: none;
+}
+
+.imageExit {
+    @include mq('tablet'){
+        animation: imageExit 0.2s linear 1;
+
+    }
+    animation: none;
+}

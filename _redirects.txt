@@ -1,0 +1,3 @@
+/projects https://github.com/davetyson/portfolioWebsite/tree/development/projects.html
+/info https://github.com/davetyson/portfolioWebsite/tree/development/info.html
+/contact https://github.com/davetyson/portfolioWebsite/tree/development/contact.html
