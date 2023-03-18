@@ -37,7 +37,7 @@ portfolioApp.formspreeClear = () => {
 portfolioApp.changeYellow = () => {
         portfolioApp.yellow.addEventListener('click', function() {
         portfolioApp.html.classList = "yellow";
-        window.localStorage.setItem("colour", "yellow");
+        localStorage.setItem("colour", "yellow");
     })
 }
 
@@ -45,7 +45,7 @@ portfolioApp.changeYellow = () => {
 portfolioApp.changeBlue = () => {
     portfolioApp.blue.addEventListener('click', () => {
         portfolioApp.html.classList = "blue";
-        window.localStorage.setItem("colour", "blue");
+        localStorage.setItem("colour", "blue");
     })
 }
 
@@ -53,17 +53,21 @@ portfolioApp.changeBlue = () => {
 portfolioApp.changeGreen = () => {
     portfolioApp.green.addEventListener('click', () => {
         portfolioApp.html.classList = "green";
-        window.localStorage.setItem("colour", "green");
+        localStorage.setItem("colour", "green");
     })
 }
 
 // Function to change colour to gradient
 portfolioApp.changeGradient = () => {
-    console.log(localStorage);
     portfolioApp.gradient.addEventListener('click', () => {
         portfolioApp.html.classList = "gradient";
-        window.localStorage.setItem("colour", "gradient");
+        localStorage.setItem("colour", "gradient");
     })
+}
+
+// Function to create image overlay for hot dog bot
+portfolioApp.project1Image = () => {
+
 }
 
 // Initialize variables and functions needed for script
@@ -85,8 +89,7 @@ portfolioApp.init = () => {
     portfolioApp.gradient = document.querySelector('.gradientP');
 
     // Check for the current colour theme in local storage and apply on page load
-    portfolioApp.currentColour = window.localStorage.getItem("colour");
-    console.log(portfolioApp.currentColour);
+    portfolioApp.currentColour = localStorage.getItem("colour");
 
     if (window.localStorage.getItem("colour") === "blue") {
         portfolioApp.html.classList = "blue";
