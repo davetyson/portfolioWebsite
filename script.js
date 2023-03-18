@@ -164,19 +164,15 @@ portfolioApp.init = () => {
 
     if (window.localStorage.getItem("colour") === "blue") {
         portfolioApp.html.classList = "blue";
-        localStorage.clear();
         localStorage.setItem("colour", "blue");
     } else if (window.localStorage.getItem("colour") === "green") {
         portfolioApp.html.classList = "green";
-        localStorage.clear();
         localStorage.setItem("colour", "green");
     } else if (window.localStorage.getItem("colour") === "gradient") {
         portfolioApp.html.classList = "gradient";
-        localStorage.clear();
         localStorage.setItem("colour", "gradient");
     } else {
         portfolioApp.html.classList = "yellow";
-        localStorage.clear();
         localStorage.setItem("colour", "yellow");
     }
 
