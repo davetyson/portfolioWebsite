@@ -187,6 +187,14 @@ img {
     }
 }
 
+::-webkit-scrollbar {
+    background: transparent;    
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;    
+}
+
 .mainContentBlock::-webkit-scrollbar {
     display: none;
 }

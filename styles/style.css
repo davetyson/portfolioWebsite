@@ -446,6 +446,14 @@ img {
   width: 100%;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
 .mainContentBlock::-webkit-scrollbar {
   display: none;
 }
@@ -824,14 +832,6 @@ footer .redBar2 {
   margin-bottom: 20px;
 }
 
-.contactForm::-webkit-scrollbar {
-  background: transparent;
-}
-
-.contactForm::-webkit-scrollbar-thumb {
-  background: red;
-}
-
 /* Info styles */
 .infoContainer {
   overflow: auto;
@@ -865,14 +865,6 @@ footer .redBar2 {
 }
 .infoContainer .socialBox a {
   margin: 0 10px;
-}
-
-.contactForm::-webkit-scrollbar {
-  background: transparent;
-}
-
-.contactForm::-webkit-scrollbar-thumb {
-  background: red;
 }
 
 /* Contact styles */
