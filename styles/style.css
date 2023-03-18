@@ -825,7 +825,8 @@ footer .redBar2 {
 }
 
 .projects::-webkit-scrollbar {
-  scrollbar-color: red transparent;
+  color: red;
+  background-color: transparent;
 }
 
 /* Info styles */
@@ -864,7 +865,8 @@ footer .redBar2 {
 }
 
 .infoContainer::-webkit-scrollbar {
-  scrollbar-color: red transparent;
+  color: red;
+  background-color: transparent;
 }
 
 /* Contact styles */
@@ -926,6 +928,11 @@ footer .redBar2 {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.contactForm::-webkit-scrollbar {
+  color: red;
+  background-color: transparent;
 }
 
 ::-webkit-input-placeholder {
