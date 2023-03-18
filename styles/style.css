@@ -453,13 +453,15 @@ img {
 .projects,
 .infoContainer,
 .missionStatement {
-  padding-right: 30px;
+  margin-right: 20px;
+  padding-right: 10px;
 }
 @media only screen and (min-width: 768px) {
   .projects,
   .infoContainer,
   .missionStatement {
-    padding-right: 48px;
+    margin-right: -15px;
+    padding-right: 64px;
   }
 }
 
@@ -762,6 +764,7 @@ footer .rotateTextFooter {
           writing-mode: vertical-rl;
   padding-bottom: 5px;
   text-align: end;
+  z-index: 100;
 }
 footer .redBar2 {
   height: 20px;
@@ -781,7 +784,7 @@ footer .redBar2 {
 /* Projects styles */
 .projects {
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-color: red transparent;
   text-align: end;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -821,14 +824,10 @@ footer .redBar2 {
   margin-bottom: 20px;
 }
 
-.projects::-webkit-scrollbar {
-  display: none;
-}
-
 /* Info styles */
 .infoContainer {
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-color: red transparent;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -837,12 +836,10 @@ footer .redBar2 {
       -ms-flex-align: end;
           align-items: end;
   text-align: right;
-  margin-right: 0;
   padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
   .infoContainer {
-    margin-right: 10px;
     padding-bottom: 10px;
   }
 }
@@ -862,14 +859,10 @@ footer .redBar2 {
   margin: 0 10px;
 }
 
-.infoContainer::-webkit-scrollbar {
-  display: none;
-}
-
 /* Contact styles */
 .contactForm {
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-color: red #000;
   margin: 0 auto;
   width: 90%;
 }
@@ -925,10 +918,6 @@ footer .redBar2 {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
-}
-
-.contactForm::-webkit-scrollbar {
-  display: none;
 }
 
 ::-webkit-input-placeholder {

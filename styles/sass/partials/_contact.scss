@@ -4,7 +4,8 @@
 
 .contactForm {
     overflow: auto;
-    scrollbar-width: none;
+    // scrollbar-width: none;
+    scrollbar-color: red #000;
     margin: 0 auto;
     width: 90%;
     form {
@@ -53,9 +54,9 @@
     }
 }
 
-.contactForm::-webkit-scrollbar {
-    display: none;
-}
+// .contactForm::-webkit-scrollbar {
+//     display: none;
+// }
 
 ::placeholder {
     color: #000;
