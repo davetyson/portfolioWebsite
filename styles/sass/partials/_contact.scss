@@ -50,6 +50,13 @@
             width: 50%;
             margin: 0 auto;
             margin-bottom: 20px;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        button:hover,
+        button:active,
+        button:focus {
+            color: red;
         }
     }
 }

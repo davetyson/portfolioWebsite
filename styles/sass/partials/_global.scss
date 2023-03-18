@@ -155,14 +155,13 @@ img {
         @include mq('tablet'){
             padding: 0 5px;
             margin: 2px 5px;
-
-
         }
         display: inline-block;
         padding: 0 2px;
         justify-content: space-around;
         margin: 2px 2px;
         border: 1px solid #000;
+        cursor: pointer;
     }
 }
 
