@@ -30,7 +30,10 @@
     }
 }
 
-.infoContainer::-webkit-scrollbar {
-    color: red;
-    background-color: transparent;    
+.contactForm::-webkit-scrollbar {
+    background: transparent;    
+}
+
+.contactForm::-webkit-scrollbar-thumb {
+    background: red;    
 }

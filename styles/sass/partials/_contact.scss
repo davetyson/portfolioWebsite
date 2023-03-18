@@ -55,8 +55,11 @@
 }
 
 .contactForm::-webkit-scrollbar {
-    color: red;
-    background-color: transparent;    
+    background: transparent;    
+}
+
+.contactForm::-webkit-scrollbar-thumb {
+    background: red;    
 }
 
 ::placeholder {

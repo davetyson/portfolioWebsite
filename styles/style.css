@@ -824,9 +824,12 @@ footer .redBar2 {
   margin-bottom: 20px;
 }
 
-.projects::-webkit-scrollbar {
-  color: red;
-  background-color: transparent;
+.contactForm::-webkit-scrollbar {
+  background: transparent;
+}
+
+.contactForm::-webkit-scrollbar-thumb {
+  background: red;
 }
 
 /* Info styles */
@@ -864,9 +867,12 @@ footer .redBar2 {
   margin: 0 10px;
 }
 
-.infoContainer::-webkit-scrollbar {
-  color: red;
-  background-color: transparent;
+.contactForm::-webkit-scrollbar {
+  background: transparent;
+}
+
+.contactForm::-webkit-scrollbar-thumb {
+  background: red;
 }
 
 /* Contact styles */
@@ -931,8 +937,11 @@ footer .redBar2 {
 }
 
 .contactForm::-webkit-scrollbar {
-  color: red;
-  background-color: transparent;
+  background: transparent;
+}
+
+.contactForm::-webkit-scrollbar-thumb {
+  background: red;
 }
 
 ::-webkit-input-placeholder {
