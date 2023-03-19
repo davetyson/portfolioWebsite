@@ -379,9 +379,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-height: 70%;
+  min-height: 50dvh;
+  max-height: 65dvh;
   margin-top: auto;
-  margin-bottom: 25%;
+  margin-bottom: auto;
   margin-left: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -389,7 +390,6 @@ img {
     width: 45%;
     max-height: 90%;
     margin-top: 2vh;
-    margin-bottom: 0;
     margin-left: 10%;
   }
 }
@@ -846,10 +846,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
-  position: fixed;
-  top: 65dvh;
-  right: 10%;
-  z-index: -10;
 }
 @media only screen and (min-width: 1655px) {
   footer {
@@ -859,6 +855,10 @@ footer {
 @media only screen and (min-width: 768px) {
   footer {
     height: 30dvh;
+    position: fixed;
+    top: 65dvh;
+    right: 10%;
+    z-index: -10;
   }
 }
 footer .rotateTextFooter {
@@ -871,7 +871,7 @@ footer .rotateTextFooter {
 }
 footer .redBarFooter {
   height: 20px;
-  width: 80%;
+  width: 100%;
   background-color: red;
 }
 @media only screen and (min-width: 768px) {
