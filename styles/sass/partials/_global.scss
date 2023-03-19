@@ -5,10 +5,14 @@
 /* Global & wrapper styles */
 
 /* Global styles and stripping auto-styling */
+html {
+    height: -webkit-fill-available;
+}
 
 body {
     overflow: hidden;
     padding-bottom: 1000px;
+    height: -webkit-fill-available;
 }
 
 h1, h2 {
@@ -89,10 +93,11 @@ img {
     overflow: auto;
     scrollbar-width: none;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 5dvh;
     width: 90%;
     max-width: 1500px;
-    height: 75vh;
+    max-height: 90dvh;
+    min-height: -webkit-fill-available;
     border: 3px solid #000;
     position: relative;
     padding: 5%;
@@ -110,7 +115,6 @@ img {
         width: 45%;
         max-height: 90%;
         margin-top: 2vh;
-        margin-bottom: 0;
         margin-left: 10%;
     }
     overflow: auto;
@@ -119,9 +123,9 @@ img {
     align-items: flex-end;
     flex-direction: column;
     width: 100%;
-    max-height: 70%;
+    height: 50dvh;
     margin-top: auto;
-    margin-bottom: 25%;
+    margin-bottom: auto;
     margin-left: 0;
     a {
         text-align: end;
