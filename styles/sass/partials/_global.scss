@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 h3 {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         margin-top: 15px;
     }
     margin: 5px;
@@ -34,7 +34,7 @@ h5 {
 }
 
 p {
-    @include mq('tablet') {
+    @include mq('tablet-wide') {
         flex-direction: row;    
         flex-wrap: wrap;
     }
@@ -67,7 +67,7 @@ li {
 }
 
 figure {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         height: 284px;
         width: 284px;
     }
@@ -85,7 +85,7 @@ img {
 
 /* Wrapper & flexbox styles */
 .wrapper {
-    @include mq('tablet') {
+    @include mq('tablet-wide') {
         flex-direction: row;    
         flex-wrap: wrap;
         height: 90vh;
@@ -111,7 +111,7 @@ img {
 
 /* Content block styles */
 .mainContentBlock {
-    @include mq('tablet') {
+    @include mq('tablet-wide') {
         width: 45%;
         height: 100%;
         margin-left: 10%;
@@ -138,7 +138,7 @@ img {
 .projects,
 .infoContainer,
 .missionStatement {
-    @include mq('tablet') {
+    @include mq('tablet-wide') {
         margin-right: -6px;
         padding-right: 54px;
     }
@@ -146,16 +146,22 @@ img {
     padding-right: 10px;
 }
 
+.missionStatement {
+    @include mq('tablet-wide'){
+        margin-bottom: 10px;
+    }
+}
+
 /* Colour swap box styles */
 .colourSwapBox {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         padding: 0 10px;
     }
     margin: 2px auto 0 auto;
     padding: 0;
     width: fit-content;
     p {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             padding: 0 5px;
             margin: 2px 5px;
         }

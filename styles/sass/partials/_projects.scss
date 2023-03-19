@@ -51,7 +51,7 @@
 
 }
 .imageBox {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         display: none;
         opacity: 0%;
     }

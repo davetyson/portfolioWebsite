@@ -10,14 +10,14 @@ html {
 }
 
 h2 {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         font-size: 1.8rem;
     }
     font-size: 1.35rem;
 }
 
 h3 {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         font-size: 2.1rem;
     }
     font-size: 0.9rem;
@@ -28,14 +28,14 @@ h5 {
 }
 
 p {
-    @include mq('tablet') {
+    @include mq('tablet-wide') {
         font-size: 1.2rem;
     }
         font-size: 0.9rem;
 }
 
 a {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         font-size: 1.2rem;
     }
     font-size: 0.9rem;
@@ -47,14 +47,14 @@ button {
 }
 
 .fa {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         font-size: 1.8rem;
     }
     font-size: 1.35rem;
 }
 
 .fontLight {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         font-size: 2.4rem;
         letter-spacing: 0.2rem;
     }
@@ -67,7 +67,7 @@ button {
 .projects {
 
     h2 {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             font-size: 1.32rem;
         }
         font-size: 1.2rem;
@@ -80,7 +80,7 @@ button {
 
     a,
     p {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             font-size: 0.96rem;
         }
         font-size: 0.9rem;
@@ -89,7 +89,7 @@ button {
 
 .infoContainer {
     p {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             font-size: 0.8rem;
         }
         font-size: 0.6rem;
