@@ -331,10 +331,10 @@ img {
   overflow: auto;
   scrollbar-width: none;
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 5dvh;
   width: 90%;
   max-width: 1500px;
-  max-height: 90vh;
+  max-height: 90dvh;
   min-height: -webkit-fill-available;
   border: 3px solid #000;
   position: relative;
