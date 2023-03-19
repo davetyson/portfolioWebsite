@@ -847,7 +847,7 @@ footer {
           flex-direction: column;
   height: auto;
   position: fixed;
-  top: 80vh;
+  top: 80dvh;
   right: 10%;
   z-index: -10;
 }
@@ -858,7 +858,7 @@ footer {
 }
 @media only screen and (min-width: 768px) {
   footer {
-    height: 30vh;
+    height: 30dvh;
   }
 }
 footer .rotateTextFooter {
