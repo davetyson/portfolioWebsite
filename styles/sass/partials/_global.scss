@@ -113,8 +113,7 @@ img {
 .mainContentBlock {
     @include mq('tablet') {
         width: 45%;
-        max-height: 90%;
-        margin-top: 2vh;
+        height: 100%;
         margin-left: 10%;
     }
     overflow: auto;

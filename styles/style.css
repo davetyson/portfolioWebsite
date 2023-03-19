@@ -387,8 +387,7 @@ img {
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
     width: 45%;
-    max-height: 90%;
-    margin-top: 2vh;
+    height: 100%;
     margin-left: 10%;
   }
 }
@@ -846,11 +845,6 @@ footer {
           flex-direction: column;
   height: auto;
 }
-@media only screen and (min-width: 1655px) {
-  footer {
-    right: calc(55% - 750px);
-  }
-}
 @media only screen and (min-width: 768px) {
   footer {
     height: 30dvh;
@@ -858,6 +852,11 @@ footer {
     top: 65dvh;
     right: 10%;
     z-index: -10;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1655px) {
+  footer {
+    right: calc(55% - 750px);
   }
 }
 footer .rotateTextFooter {
