@@ -5,10 +5,14 @@
 /* Global & wrapper styles */
 
 /* Global styles and stripping auto-styling */
+html {
+    height: -webkit-fill-available;
+}
 
 body {
     overflow: hidden;
     padding-bottom: 1000px;
+    height: -webkit-fill-available;
 }
 
 h1, h2 {
@@ -92,7 +96,9 @@ img {
     margin-top: 5vh;
     width: 90%;
     max-width: 1500px;
-    height: 75vh;
+    // height: 75vh;
+    min-height: 90vh;
+    min-height: -webkit-fill-available;
     border: 3px solid #000;
     position: relative;
     padding: 5%;
