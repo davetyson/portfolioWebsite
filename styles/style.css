@@ -387,8 +387,7 @@ img {
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
     width: 45%;
-    max-height: 90%;
-    margin-top: 2vh;
+    height: 100%;
     margin-left: 10%;
   }
 }
