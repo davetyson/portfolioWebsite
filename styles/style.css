@@ -849,7 +849,7 @@ footer {
   footer {
     height: 30dvh;
     position: fixed;
-    top: 65dvh;
+    top: 63dvh;
     right: 10%;
     z-index: -10;
   }
