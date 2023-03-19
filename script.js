@@ -93,6 +93,18 @@ portfolioApp.hideProjectImage5 = () => {
     })
 }
 
+// Project 6
+portfolioApp.showProjectImage6 = () => {
+    portfolioApp.project6Header.addEventListener('mouseover', () => {
+        portfolioApp.image6.classList='imageBoxReveal imageReveal image6';
+    })
+}
+portfolioApp.hideProjectImage6 = () => {
+    portfolioApp.project6Container.addEventListener('mouseleave', () => {
+        portfolioApp.image6.classList='imageBox imageExit image6';
+    })
+}
+
 // Functions to change the page colour when user selects a different one
 // Function to change page colour to yellow
 portfolioApp.changeYellow = () => {
@@ -136,21 +148,24 @@ portfolioApp.init = () => {
     portfolioApp.footerP = document.querySelector('.footerP');
 
     // Select elements for image box functions
-    portfolioApp.project1Header = document.querySelector('.project1')
-    portfolioApp.project2Header = document.querySelector('.project2')
-    portfolioApp.project3Header = document.querySelector('.project3')
-    portfolioApp.project4Header = document.querySelector('.project4')
-    portfolioApp.project5Header = document.querySelector('.project5')
-    portfolioApp.project1Container = document.querySelector('.project1Container')
-    portfolioApp.project2Container = document.querySelector('.project2Container')
-    portfolioApp.project3Container = document.querySelector('.project3Container')
-    portfolioApp.project4Container = document.querySelector('.project4Container')
-    portfolioApp.project5Container = document.querySelector('.project5Container')
+    portfolioApp.project1Header = document.querySelector('.project1');
+    portfolioApp.project2Header = document.querySelector('.project2');
+    portfolioApp.project3Header = document.querySelector('.project3');
+    portfolioApp.project4Header = document.querySelector('.project4');
+    portfolioApp.project5Header = document.querySelector('.project5');
+    portfolioApp.project6Header = document.querySelector('.project6');
+    portfolioApp.project1Container = document.querySelector('.project1Container');
+    portfolioApp.project2Container = document.querySelector('.project2Container');
+    portfolioApp.project3Container = document.querySelector('.project3Container');
+    portfolioApp.project4Container = document.querySelector('.project4Container');
+    portfolioApp.project5Container = document.querySelector('.project5Container');
+    portfolioApp.project6Container = document.querySelector('.project6Container');
     portfolioApp.image1 = document.querySelector('.image1');
     portfolioApp.image2 = document.querySelector('.image2');
     portfolioApp.image3 = document.querySelector('.image3');
     portfolioApp.image4 = document.querySelector('.image4');
     portfolioApp.image5 = document.querySelector('.image5');
+    portfolioApp.image6 = document.querySelector('.image6');
 
     // Select elements for colour change script
     portfolioApp.html = document.querySelector('html');
@@ -194,6 +209,8 @@ portfolioApp.init = () => {
     portfolioApp.hideProjectImage4();
     portfolioApp.showProjectImage5();
     portfolioApp.hideProjectImage5();
+    portfolioApp.showProjectImage6();
+    portfolioApp.hideProjectImage6();
 }
 
 // Call portfolioApp initialization
