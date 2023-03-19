@@ -380,9 +380,11 @@ img {
           flex-direction: column;
   width: 100%;
   height: 50dvh;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0;
+  position: absolute;
+  top: 25dvh;
+  bottom: 25dvh;
+  right: auto;
+  left: auto;
 }
 @media only screen and (min-width: 768px) {
   .mainContentBlock {
