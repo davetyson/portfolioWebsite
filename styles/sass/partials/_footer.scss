@@ -4,7 +4,7 @@
 /* Footer styles */
 
 footer {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         height: 30dvh;
         position: fixed;
         top: 63dvh;
@@ -27,7 +27,7 @@ footer {
         z-index: 100;
     }
     .redBarFooter {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             width: 40%;
         }
         height: 20px;

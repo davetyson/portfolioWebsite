@@ -4,7 +4,7 @@
 /* Info styles */
 
 .infoContainer {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         padding-bottom: 10px;
     }
     flex-direction: column;

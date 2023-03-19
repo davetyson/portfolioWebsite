@@ -253,7 +253,7 @@ h3 {
   margin: 5px;
   margin-top: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   h3 {
     margin-top: 15px;
   }
@@ -272,7 +272,7 @@ p {
   padding: 0;
   text-align: right;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   p {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -313,7 +313,7 @@ figure {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   figure {
     height: 284px;
     width: 284px;
@@ -346,7 +346,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -384,7 +384,7 @@ img {
   margin-bottom: auto;
   margin-left: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .mainContentBlock {
     width: 45%;
     height: 100%;
@@ -407,12 +407,18 @@ img {
   margin-right: 20px;
   padding-right: 10px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .projects,
   .infoContainer,
   .missionStatement {
     margin-right: -6px;
     padding-right: 54px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .missionStatement {
+    margin-bottom: 10px;
   }
 }
 
@@ -424,7 +430,7 @@ img {
   width: -moz-fit-content;
   width: fit-content;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .colourSwapBox {
     padding: 0 10px;
   }
@@ -438,7 +444,7 @@ img {
   border: 1px solid #000;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .colourSwapBox p {
     padding: 0 5px;
     margin: 2px 5px;
@@ -499,7 +505,7 @@ html {
 h2 {
   font-size: 1.35rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   h2 {
     font-size: 1.8rem;
   }
@@ -508,7 +514,7 @@ h2 {
 h3 {
   font-size: 0.9rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   h3 {
     font-size: 2.1rem;
   }
@@ -521,7 +527,7 @@ h5 {
 p {
   font-size: 0.9rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   p {
     font-size: 1.2rem;
   }
@@ -530,7 +536,7 @@ p {
 a {
   font-size: 0.9rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   a {
     font-size: 1.2rem;
   }
@@ -544,7 +550,7 @@ button {
 .fa {
   font-size: 1.35rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .fa {
     font-size: 1.8rem;
   }
@@ -556,7 +562,7 @@ button {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .fontLight {
     font-size: 2.4rem;
     letter-spacing: 0.2rem;
@@ -566,7 +572,7 @@ button {
 .projects h2 {
   font-size: 1.2rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .projects h2 {
     font-size: 1.32rem;
   }
@@ -578,7 +584,7 @@ button {
 .projects p {
   font-size: 0.9rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .projects a,
   .projects p {
     font-size: 0.96rem;
@@ -588,7 +594,7 @@ button {
 .infoContainer p {
   font-size: 0.6rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .infoContainer p {
     font-size: 0.8rem;
   }
@@ -741,7 +747,7 @@ button {
   -webkit-animation: none;
           animation: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .imageReveal {
     -webkit-animation: imageReveal 0.2s linear 1;
             animation: imageReveal 0.2s linear 1;
@@ -752,7 +758,7 @@ button {
   -webkit-animation: none;
           animation: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .imageExit {
     -webkit-animation: imageExit 0.2s linear 1;
             animation: imageExit 0.2s linear 1;
@@ -769,7 +775,7 @@ h1 {
 .headerBlock {
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .headerBlock {
     width: 45%;
   }
@@ -777,7 +783,7 @@ h1 {
 .headerBlock .topH3 {
   padding-top: 31px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .headerBlock .topH3 {
     padding-top: 25px;
   }
@@ -790,7 +796,7 @@ h1 {
   min-width: 0;
   background-color: red;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .redBarHeader {
     width: 100%;
     min-width: 475px;
@@ -822,7 +828,7 @@ h1 {
   transition: 0.3s;
   position: absolute;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .menu ul {
     left: 11%;
   }
@@ -845,7 +851,7 @@ footer {
           flex-direction: column;
   height: auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   footer {
     height: 30dvh;
     position: fixed;
@@ -854,7 +860,7 @@ footer {
     z-index: -10;
   }
 }
-@media only screen and (min-width: 768px) and (min-width: 1655px) {
+@media only screen and (min-width: 1024px) and (min-width: 1655px) {
   footer {
     right: calc(55% - 750px);
   }
@@ -872,7 +878,7 @@ footer .redBarFooter {
   width: 100%;
   background-color: red;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   footer .redBarFooter {
     width: 40%;
   }
@@ -938,7 +944,7 @@ footer .redBarFooter {
   display: block;
   opacity: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .imageBox {
     display: none;
     opacity: 0%;
@@ -965,7 +971,7 @@ footer .redBarFooter {
   text-align: right;
   padding-bottom: 20px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .infoContainer {
     padding-bottom: 10px;
   }
@@ -1005,7 +1011,7 @@ footer .redBarFooter {
   border: none;
   margin-top: 20px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .contactForm form fieldset {
     margin-top: 0;
   }

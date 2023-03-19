@@ -78,7 +78,7 @@
 }
 
 .imageReveal {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         animation: imageReveal 0.2s linear 1;
 
     }
@@ -86,7 +86,7 @@
 }
 
 .imageExit {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         animation: imageExit 0.2s linear 1;
 
     }

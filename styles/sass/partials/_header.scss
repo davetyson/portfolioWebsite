@@ -9,12 +9,12 @@ h1 {
 }
 
 .headerBlock {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         width: 45%;
     }
     width: 100%;
     .topH3 {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             padding-top: 25px;
         }
         padding-top: 31px;
@@ -23,7 +23,7 @@ h1 {
 
 /* Red bar */
 .redBarHeader {
-    @include mq('tablet'){
+    @include mq('tablet-wide'){
         width: 100%;
         min-width: 475px;
 
@@ -47,7 +47,7 @@ h1 {
         cursor: pointer;
     }
     ul {
-        @include mq('tablet'){
+        @include mq('tablet-wide'){
             left: 11%;
         }
         opacity: 0%;
