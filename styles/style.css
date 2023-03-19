@@ -379,8 +379,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  min-height: 50dvh;
-  max-height: 65dvh;
+  height: 50dvh;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 0;
